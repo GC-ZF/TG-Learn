@@ -1649,7 +1649,19 @@ git merge <分支名> 	  # 将拉取下来的最新内容合并到当前所在�
 
 ![image-20220121181717995](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A0103.png)
 
-建议使用`fetch+merge`[详解git pull和git fetch的区别：_马恩光的博客-CSDN博客_git pull和fetch的区别](https://blog.csdn.net/weixin_41975655/article/details/82887273?ops_request_misc=%7B%22request%5Fid%22%3A%22164267091316780265412130%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=164267091316780265412130&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-82887273.pc_search_insert_es_download&utm_term=git+fetch和git+pull的区别&spm=1018.2226.3001.4187)
+**总结**
+
+所以建议使用`fetch+merge`，可以先`git fetch`,查看远程是否有新的更新？如果没有更新，不返回仍何值
+
+![image-20220123181152099](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A0140.png)
+
+如果有更新再用`git merge origin <branch-name>`将本地仓库与远程仓库合并
+
+![image-20220123181610501](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A0141.png)
+
+解决冲突后再进行`git push`
+
+[详解git pull和git fetch的区别：_马恩光的博客-CSDN博客_git pull和fetch的区别](https://blog.csdn.net/weixin_41975655/article/details/82887273?ops_request_misc=%7B%22request%5Fid%22%3A%22164267091316780265412130%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=164267091316780265412130&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-82887273.pc_search_insert_es_download&utm_term=git+fetch和git+pull的区别&spm=1018.2226.3001.4187)
 
 [Git fetch & pull 详解_MuffinFish的博客-CSDN博客_git pull](https://blog.csdn.net/qq_36113598/article/details/78906882?ops_request_misc=%7B%22request%5Fid%22%3A%22164266728216780366544333%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=164266728216780366544333&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-78906882.pc_search_insert_es_download&utm_term=git+fetch&spm=1018.2226.3001.4187)
 

@@ -723,7 +723,7 @@ git checkout -b <branch-name>
 git checkout <branch-name>
 
 # 合并指定分支到当前分支
-$ git merge <branch-name>
+git merge <branch-name>
 
 # 合并远程分支到当前分支
 $ git merge origin <远程分支>
@@ -1433,6 +1433,10 @@ git config --local --list
 ![image-20220120200653705](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A079.png)
 
 ![image-20220120200657979](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A080.png)
+
+执行`git add`后执行`git status`，窗口也会提示移除暂存区的指令`git restore --staged <filename>`
+
+![image-20220123184542563](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A0142.png)
 
 ## 13.2 git push上传新的分支
 

@@ -629,7 +629,7 @@ git config --global user.email 1310446718@qq.com   #邮箱
 
 > 1. Git\etc\gitconfig  ：Git 安装目录下的 gitconfig   --system 系统级
 >
-> 2. C:\Users\86158\ .gitconfig  只适用于当前登录用户的配置  --global 全局
+> 2. C:\Users\用户名8\ .gitconfig  只适用于当前登录用户的配置  --global 全局
 
 # 六、常用的命令
 
@@ -726,14 +726,14 @@ git checkout <branch-name>
 git merge <branch-name>
 
 # 合并远程分支到当前分支
-$ git merge origin <远程分支>
+git merge origin <远程分支>
 
 # 删除分支
-$ git branch -d <branch-name>
+git branch -d <branch-name>
 
 # 删除远程分支
-$ git push origin --delete <branch-name>
-$ git branch -dr <remote/branch>
+git push origin --delete <branch-name>
+git branch -dr <remote/branch>
 
 # 变基 按提交顺序合并指定分支到当前分支
 git rebase 
@@ -1078,7 +1078,7 @@ eg：新建1.0文本提交一次，新建2.0文本提交一次
 
 ![image-20220120202116414](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A045.png)
 
-新建一个分支`新分支`，在`新分支`新建一个3.0文本提交一次。
+新建一个分支`新分支`，在`新分支`新建一个3.0文本提交一次
 
 ![image-20220120202130656](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A046.png)
 
@@ -1196,7 +1196,7 @@ graph LR;
 2.设置本机绑定SSH公钥，实现免密码登录！（免密码登录，这一步挺重要的，码云是远程仓库，我们是平时工作在本地仓库！)
 
 ```bash
-# 进入 C:\Users\86158\.ssh 目录 右击Git Bash Here
+# 进入 C:\Users\用户名\.ssh 目录 右击Git Bash Here
 # 使用rsa加密生成公钥
 ssh-keygen -t rsa 
 ```
@@ -1208,7 +1208,7 @@ ssh-keygen -t rsa
 3.将公钥信息public key添加到码云账户即可
 
 通过查看`cat ~/.ssh/id_rsa.pub` 文件内容，获取到你的 public key或者直接用记事本打开`id_ed2519.pub`,复制内容添加到公钥
-也可以打开`C:\Users\86158\\.ssh\id_rsa.pub`
+也可以打开`C:\Users\用户名\.ssh\id_rsa.pub`
 
 ```bash
 cat ~/.ssh/id_rsa.pub
@@ -1246,7 +1246,7 @@ cat ~/.ssh/id_rsa.pub
 
 # 十一、利用GitHub连接远程仓库(免密登录)
 
-上面学习了gitee，学习github就简单很多了，这里就虽然是英文，但是页面布局基本一致。先删掉上面`C:\Users\86158\.ssh`内所有配置
+上面学习了gitee，学习github就简单很多了，这里就虽然是英文，但是页面布局基本一致。先删掉上面`C:\Users\用户名\.ssh`内所有配置
 
 1.自己新建一个账号 [GitHUb](github.com)。Github在国内被ban了，要自己学会魔法。
 
@@ -1259,7 +1259,7 @@ cat ~/.ssh/id_rsa.pub
 3.生成公钥和私钥：输入以下命令
 
 ```bash
-# 进入 C:\Users\86158\.ssh 目录 右击Git Bash Here
+# 进入 C:\Users\用户名\.ssh 目录 右击Git Bash Here
 # 使用rsa加密生成公钥
 ssh-keygen -t rsa 
 ```
@@ -1292,7 +1292,7 @@ ssh 方式链接到 Github／Gitee，需要唯一的公钥，如果想同一台�
 
 **1.创建 ssh key**
 
-进入 `C:\Users\86158\.ssh` 目录 右击`Git Bash Here`。输入
+进入 `C:\Users\用户名\.ssh` 目录 右击`Git Bash Here`。输入
 
 ```bash
 ssh-keygen -t rsa -C "密钥名称 随便命名" -f "文件名字"
@@ -1307,7 +1307,7 @@ ssh-keygen -t rsa -C "GC-ZF" -f "id_rsa_github"
 
 ![image-20220121104331257](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A070.png)
 
-完成后，会在 `C:\Users\86158\.ssh` 文件夹下生成github和码云的私钥和公钥文件
+完成后，会在 `C:\Users\用户名\.ssh` 文件夹下生成github和码云的私钥和公钥文件
 
 ![image-20220121104605162](https://raw.githubusercontent.com/GC-ZF/Typora-img/main/img/Git%E5%AD%A6%E4%B9%A071.png)
 

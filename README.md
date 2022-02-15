@@ -1,6 +1,6 @@
 <h1 align="center">TG Learn's introduce</h1>
 
-一般代码的中文讲解都发在博客:point_right:<a href="https://blog.csdn.net/qq_49488584?type=lately">
+一般情况都会将代码的思路和讲解发在博客:point_right:<a href="https://blog.csdn.net/qq_49488584?type=lately">
   <img alt="CSDN" height="30px" src="https://user-images.githubusercontent.com/94956933/154077484-0d9978d5-7d0e-44d1-b888-22ebf9c96db8.png" />
 </a>
 

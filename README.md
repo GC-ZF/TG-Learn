@@ -4,9 +4,12 @@
   <img alt="CSDN" height="30px" src="https://user-images.githubusercontent.com/94956933/154077484-0d9978d5-7d0e-44d1-b888-22ebf9c96db8.png" />
 </a>
 
+
 **notice:**  
 * 🔄标记为暂时存储，短时间内可能会有更改或删除，需要的自行`clone`
 * 🔚标记长期不做更改
+* 本仓库原地址<a href="https://github.com/GC-ZF/TG-Learn.git">Github repo</a>
+* 无机场导致Github访问慢，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
 
 # First-semester-of-junior-year
 >* 🔚MFC(基于C++的计算机图形学)
@@ -36,22 +39,21 @@
 # Second-semester-of-junior-year
 
 
-# How to Download
-<h2>下载整个仓库</h2>
-有`Git Bash`用`git clone [url]`。没有
+# 如何下载
+<h2>1.下载整个仓库</h2>
 
-<h2>下载单个文件</h2>
+有**Git软件**用`git clone [url]`。没有**Git软件**下载后自行解压</br>
+<img alt="Download ZIP" height=200px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Download%20ZIP.jpg">
 
-`右击RAW->将链接另存为`
+<h2>2.下载单个文件</h2>
 
+`右击RAW->将链接另存为`</br>
 <img alt="RAW Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/RAW%20Download.jpg">
 
-**.zip、.png、.jpg** 等可以直接 `Download`
+**.zip、.png、.jpg** 等可以直接 `Download`</br>
+<img alt="ZIP Download" height=200px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download.jpg">
 
-<img alt="ZIP Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download.jpg">
+<h2>3.下载单个文件夹</h2>
 
-<h2>下载单个文件夹</h2>
-
-仓库界面按<kbd>。</kbd>号进入Web editor，右击文件夹或文件
-
+仓库界面按<kbd>。</kbd>号进入Web editor，右击文件夹或文件</br>
 <img alt="Web editor Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Web%20editor%20Download.jpg">

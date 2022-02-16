@@ -33,16 +33,25 @@
 >   * APPLE
 >   * 小米闪购
 
-
 # Second-semester-of-junior-year
 
 
 # How to Download
+<h2>下载整个仓库</h2>
+有`Git Bash`用`git clone [url]`。没有
+
 <h2>下载单个文件</h2>
+
 `右击RAW->将链接另存为`
-<img alt="RAW Download" height=300px src="https://github.com/GC-ZF/TG-Learn/blob/main/Img/RAW%20Download.jpg">
+
+<img alt="RAW Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/RAW%20Download.jpg">
+
 **.zip、.png、.jpg** 等可以直接 `Download`
-<img alt="ZIP Download" height=300px src="https://github.com/GC-ZF/TG-Learn/blob/main/Img/ZIP%20Download.jpg">
+
+<img alt="ZIP Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download.jpg">
+
 <h2>下载单个文件夹</h2>
-仓库界面按<kbd>。</kbd>号进入Web editor
-<img alt="Web editor Download" height=300px src="https://github.com/GC-ZF/TG-Learn/blob/main/Img/Web%20editor%20Download.jpg">
+
+仓库界面按<kbd>。</kbd>号进入Web editor，右击文件夹或文件
+
+<img alt="Web editor Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Web%20editor%20Download.jpg">

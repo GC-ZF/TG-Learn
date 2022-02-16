@@ -7,3 +7,5 @@
 >   * 磁盘调度算法自定义磁头.java
 >   * 银行家算法.java
 >   * 页面置换算法.java
+>   
+>不会使用Github下载,<a href="https://github.com/GC-ZF/TG-Learn">下载方法</a>

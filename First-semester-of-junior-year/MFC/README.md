@@ -9,3 +9,5 @@
 >   * 实验6 基于OBJ文件建模.zip
 >   * 期末课设青花瓷坛.zip
 >   * 计算机图形学项目中期报告 酒坛子.zip
+>   
+>不会使用Github下载,<a href="https://github.com/GC-ZF/TG-Learn">下载方法</a>

@@ -1,0 +1,349 @@
+/*清除默认样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*设置整个页面大小*/
+.main {
+	width: 100%;
+	height: 4000px;
+	background-color: #F2F2F2;
+}
+
+/*设置顶部广告div*/
+.head {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(68, 68, 68);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+/*撑高度*/
+.hide {
+	width: 100%;
+	height: 40px;
+}
+
+/* 设置头部文字内容，广告*/
+.head-text span {
+	position: relative;
+	/*生成相对定位*/
+	top: 8px;
+	left: 83%;
+	color: #A8A8AA;
+	font-size: 12px;
+}
+
+/*设置导航栏*/
+.header {
+	width: 100%;
+	height: 44px;
+	background-color: rgba(48, 48, 51, 0.9);
+	position: fixed;
+	/*将导航栏固定*/
+}
+
+/*隐藏无序列表的"·"*/
+.header ul {
+	margin-left: 180px;
+	list-style-type: none;
+}
+
+/*设置li*/
+.header ul li {
+	width: 56px;
+	height: 44px;
+	margin-left: 30px;
+	line-height: 44px;
+	float: left;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 10px;
+}
+
+.header ul a {
+	/*去除项目下划线*/
+	list-style: none;
+	color: rgb(214, 214, 214);
+	/*去除下划线*/
+	text-decoration: none;
+}
+
+/*内容部分*/
+.content {
+	margin-top: 100px;
+}
+
+/*在线选购广告*/
+.content-x {
+	width: 100%;
+	height: 35px;
+	background-color: rgba(245, 245, 247, 0.9);
+	margin-top: -60px;
+	font-family: "宋体";
+}
+/*设置a标签样式无下划线*/
+.content-x p a {
+	color: rgb(107, 165, 223);
+	text-decoration: none;
+}
+/*设置P标签内文字大小*/
+#x {
+	font-size: 1px;
+	line-height: 2;
+	margin: 0px 0px 6.4px;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(29, 29, 31, 0.5);
+}
+
+.content-head {
+	width: 100%;
+	height: 750px;
+	background-color: #eaf2fc;
+	margin-top: 0.1875rem;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.content-head p {
+	color: #111;
+	text-align: center;
+}
+
+
+#one {
+	font-size: 40px;
+	line-height: 2;
+	margin: 20px 0px 6.4px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#two {
+	font-size: 20px;
+	line-height: 1.38;
+	text-align: center;
+}
+
+
+#three {
+	color: #0070c9;
+	font-size: 21px;
+	margin: 11.05px 0px 0px;
+}
+
+
+
+#three a {
+	text-decoration: none;
+	margin: 0px 0px 0px 20px;
+}
+
+#three a:hover {
+	text-decoration: underline;
+	color: #0070c9;
+}
+
+#three a:visited {
+	color: #0070C9;
+
+}
+
+#three a:link {
+	color: #0070C9;
+}
+/*图片旋转效果*/
+.box1 {
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+	transition: 1s;
+}
+
+.box1:hover {
+	transform: rotateX(45deg) scale(2);
+	/* transform: scale(2); */
+}
+
+.content-13Pro {
+	width: 100%;
+	height: 680px;
+	margin: 30px auto;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.content-13Pro p {
+	color: #111;
+	text-align: center;
+}
+
+.content-13Pro a {
+	font-size: 21px;
+	text-decoration: none;
+	margin: 0px 0px 0px 20px;
+}
+
+.content-13Pro a:hover {
+	text-decoration: underline;
+	color: #0070c9;
+}
+
+.content-13Pro a:visited {
+	color: #0070C9;
+}
+
+.content-13 {
+	width: 100%;
+	height: 650px;
+	margin: 20px auto;
+
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/*去掉下划线*/
+.content-13 a {
+	font-size: 21px;
+	text-decoration: none;
+	margin: 0px 0px 0px 20px;
+}
+
+.content-13 a:hover {
+	text-decoration: underline;
+	color: #0070c9;
+}
+
+.content-13 a:visited {
+	color: #0070C9;
+}
+
+#one1 {
+	font-size: 40px;
+	line-height: 2;
+	margin: 20px 0px 6.4px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+#three1 {
+	color: white;
+	font-size: 21px;
+	margin: 11.05px 0px 0px;
+	text-align: center;
+}
+
+
+#three1 a:link {
+	color: #0070c9;
+}
+
+
+
+#seven {
+	margin: 20px auto;
+}
+
+.content-Last {
+
+	width: 924px;
+	height: 646px;
+	margin: 200px auto;
+	overflow: hidden;
+}
+
+
+.content-Lastn {
+	width: 6468px;
+	height: 646px;
+	margin-top: 50px;
+	animation: run 6s infinite steps(6);
+}
+
+.content-Lastn img {
+	float: left;
+}
+
+@keyframes run {
+	from {
+		margin-left: 0;
+	}
+
+	to {
+		margin-left: -5544px;
+	}
+}
+/*末尾部分*/
+.footer {
+	margin: 0px auto;
+	width: 980px;
+}
+
+.foot-top {
+	color: #888888;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	padding: 0px 0px 9.6px;
+}
+
+.foot-list {
+	padding: 20px 0px 0px;
+	font-size: 12px;
+	color: #555555;
+	width: 100%;
+	height: 300px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.list-first {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.list-first ul li {
+	list-style: none;
+	margin: 0px 0px 9.6px;
+
+}
+
+.foot-title {
+	margin: 0px 0px 9.6px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.list-first ul li:hover {
+	/*cursor 移入 手形-*/
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.foot_top {
+	width: 980px;
+	height: 25px;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #888888;
+	margin: 34px 0px 5px;
+}
+
+.foot_top span {
+	color: #0070C9;
+}
+
+.bottom {
+	width: 980px;
+	height: 25px;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #888888;
+	padding: 5px 0px 5px;
+}
+.bottom a {
+	font-size: 1px;
+	text-decoration: none;
+	margin: 0px 0px 0px 20px;
+	color: rgba(29, 29, 31, 0.5);
+}

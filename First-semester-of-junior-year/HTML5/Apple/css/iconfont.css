@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3063102 */
+  src: url('iconfont.woff2?t=1640446088733') format('woff2'),
+       url('iconfont.woff?t=1640446088733') format('woff'),
+       url('iconfont.ttf?t=1640446088733') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*APPLE logo*/
+.icon-changyonglogo35:before {
+  content: "\e71c";
+}
+/*搜索*/
+.icon-sousuo:before {
+  content: "\e606";
+}
+
+.icon-sousuo1:before {
+  content: "\e645";
+}
+/*购物袋*/
+.icon-gouwudai:before {
+  content: "\e609";
+}
+

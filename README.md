@@ -9,7 +9,7 @@
 * 🔚标记长期不做更改
 
 # First-semester-of-junior-year
->* 🔚MFC      (基于C++的计算机图形学)
+>* 🔚MFC(基于C++的计算机图形学)
 >   * 实验1 十二面体.zip
 >   * 实验1 正八面体.zip
 >   * 实验1 金字塔.zip
@@ -20,7 +20,7 @@
 >   * 实验6 基于OBJ文件建模.zip
 >   * 期末课设青花瓷坛.zip
 >   * 计算机图形学项目中期报告 酒坛子.zip
->* 🔚OS Experiment JAVA      (基于JAVA的操作系统实验)
+>* 🔚OS Experiment JAVA(基于JAVA的操作系统实验)
 >   * DiskManage.java
 >   * 动态分区算法.java
 >   * 模拟调度时间片.java
@@ -29,6 +29,20 @@
 >   * 磁盘调度算法自定义磁头.java
 >   * 银行家算法.java
 >   * 页面置换算法.java
+>* 🔚HTML5(HTML练习仿APPLE和小米首页)
+>   * APPLE
+>   * 小米闪购
 
 
 # Second-semester-of-junior-year
+
+
+# How to Download
+<h2>下载单个文件</h2>
+`右击RAW->将链接另存为`
+<img alt="RAW Download" height=300px src="https://github.com/GC-ZF/TG-Learn/blob/main/Img/RAW%20Download.jpg">
+**.zip、.png、.jpg** 等可以直接 `Download`
+<img alt="ZIP Download" height=300px src="https://github.com/GC-ZF/TG-Learn/blob/main/Img/ZIP%20Download.jpg">
+<h2>下载单个文件夹</h2>
+仓库界面按<kbd>。</kbd>号进入Web editor
+<img alt="Web editor Download" height=300px src="https://github.com/GC-ZF/TG-Learn/blob/main/Img/Web%20editor%20Download.jpg">

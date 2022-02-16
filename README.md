@@ -51,8 +51,7 @@
 <img alt="RAW Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/RAW%20Download.jpg">
 
 **.zip、.png、.jpg** 等可以直接 `Download`</br>
-<img alt="ZIP Download" height=200px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download.jpg">
-
+<img alt="ZIP Download" height=200px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download1.jpg">
 <h2>3.下载单个文件夹</h2>
 
 仓库界面按<kbd>。</kbd>号进入Web editor，右击文件夹或文件</br>

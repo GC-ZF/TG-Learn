@@ -11,6 +11,12 @@
 * 本仓库原地址<a href="https://github.com/GC-ZF/TG-Learn.git">Github repo</a>
 * 无机场导致Github访问慢，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
 
+**仓库目录**
+
+- [First-semester-of-junior-year](#First-semester-of-junior-year)
+- [Second-semester-of-junior-year](#Second-semester-of-junior-year)
+- [如何下载](# 如何下载)
+
 # First-semester-of-junior-year
 >* 🔚MFC(基于C++的计算机图形学)
 >   * 实验1 十二面体.zip

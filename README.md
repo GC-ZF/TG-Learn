@@ -1,21 +1,18 @@
 <h1 align="center">TG Learn's introduce</h1>
-
 一般情况都会将代码的思路和讲解发在博客:point_right:<a href="https://blog.csdn.net/qq_49488584?type=lately">
   <img alt="CSDN" height="30px" src="https://user-images.githubusercontent.com/94956933/154077484-0d9978d5-7d0e-44d1-b888-22ebf9c96db8.png" />
 </a>
 
-
-**notice:**  
+**📞noticeq:**  
 * 🔄标记为暂时存储，短时间内可能会有更改或删除，需要的自行`clone`
 * 🔚标记长期不做更改
 * 本仓库原地址<a href="https://github.com/GC-ZF/TG-Learn.git">Github repo</a>
 * 无机场导致Github访问慢，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
 
-**仓库目录**
-
+**📣目录**
 - [First-semester-of-junior-year](#First-semester-of-junior-year)
 - [Second-semester-of-junior-year](#Second-semester-of-junior-year)
-- [如何下载](# 如何下载)
+- [如何下载](#如何下载)
 
 # First-semester-of-junior-year
 >* 🔚MFC(基于C++的计算机图形学)

@@ -8,7 +8,7 @@
 * 🔄标记为暂时存储，短时间内可能会有更改或删除，需要的自行`clone`
 * 🔚标记长期不做更改
 * 本仓库原地址<a href="https://github.com/GC-ZF/TG-Learn.git">Github repo</a>
-* 无🛫✈导致Github访问慢，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
+* 无🛫✈，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
 
 **📣目录**
 - [First-semester-of-junior-year](#First-semester-of-junior-year)

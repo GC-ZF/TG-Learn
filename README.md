@@ -4,7 +4,7 @@
   <img alt="CSDN" height="30px" src="https://user-images.githubusercontent.com/94956933/154077484-0d9978d5-7d0e-44d1-b888-22ebf9c96db8.png" />
 </a>
 
-**📞noticeq:**  
+**📞notice:**  
 * 🔄标记为暂时存储，短时间内可能会有更改或删除，需要的自行`clone`
 * 🔚标记长期不做更改
 * 本仓库原地址<a href="https://github.com/GC-ZF/TG-Learn.git">Github repo</a>

@@ -41,7 +41,14 @@
 >   * 小米闪购
 
 # Second-semester-of-junior-year
-
+>* 🔄3D modeling technology
+>   * Chair.max
+>   * Chair.png
+>   * DNA.max
+>   * DNA.png
+>* JAVA WEB
+>   * 3.12 National Scholarship Application Form.html
+>   * 3.9 Personal information.html
 
 # 如何下载
 <h2>1.下载整个仓库</h2>

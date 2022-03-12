@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人简历</title>
+		<style>
+			/* 整个页面居中 */
+			* {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			/* 为整个页面添加边框颜色 */
+			.page {
+				height: 900px;
+				width: 860px;
+				background-color: azure;
+				border: solid 1px black;
+			}
+
+			/* 左侧块属性 */
+			.div-left {
+				height: 900px;
+				width: 250px;
+				background-color: azure;
+			}
+
+			/* 头像 */
+			.head {
+				margin-left: -700px;
+				padding-top: 50px;
+			}
+
+			/* 设置左侧线条 */
+			.line {
+				height: 2px;
+				width: 200px;
+				background-color: deepskyblue;
+				position: absolute;
+				margin-left: -280px;
+				margin-top: 5px;
+			}
+
+			/* 线条上文字的位置 */
+			.lineup {
+				position: absolute;
+				margin-left: -420px;
+				margin-top: -20px;
+			}
+
+			/* 线条下文字的位置 */
+			.linedown {
+				height: 250px;
+				margin-left: -600px;
+				margin-top: 20px;
+			}
+
+			/* 右侧块属性 */
+			.div-right {
+				height: 900px;
+				width: 600px;
+				background-color: white;
+				margin-top: -900px;
+				margin-left: 250px;
+			}
+
+			/* 姓名 */
+			.div-rightname {
+				padding-top: 25px;
+				margin-left: 60px;
+			}
+
+			/* 右侧标题位置 */
+			.div-righttitle {
+				height: 35px;
+				width: 160px;
+				background-color: #3498DB;
+				margin-left: 20px;
+				margin-top: 30px;
+			}
+
+			/* 右侧标题内文字位置 */
+			.div-righttitle font {
+				margin: 0 auto;
+			}
+
+			/* 右侧块内容 */
+			.div-righttext {
+				margin-top: 25px;
+				margin-left: 25px;
+			}
+
+			/* 合并表格的线条 */
+			table {
+				border: black 0.0625rem solid;
+				border-collapse: collapse;
+			}
+
+			/* 规定行列线条熟属性 */
+			td {
+				border: black 0.0625rem solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<!--左侧内容-->
+			<div class="div-left">
+				<div class="head">
+					<img src="https://img-blog.csdnimg.cn/3455174314234152aae31fcef73b09b6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5byg5pe26LSw,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center"
+						height="100px" width="100px" />
+				</div>
+				<br />
+				<br />
+				<!--个人信息-->
+				<b class="lineup">
+					<font color="dodgerblue" size="4">&nbsp;&nbsp;&nbsp;&nbsp;个人信息：</font>
+				</b>
+				<div class="line"></div>
+				<div class="linedown">
+					<h4>地址：</h4>
+					<h5>山西省太原市</h5>
+					<h4>出生日期：</h4>
+					<h5>2001.01.01</h5>
+					<h4>民族：</h4>
+					<h5>汉</h5>
+					<h4>电话：</h4>
+					<h5>1310446718</h5>
+					<h4>邮箱：</h4>
+					<h5>1310446718@qq.com</h5>
+				</div>
+
+				<!--教育经历-->
+				<b class="lineup">
+					<font color="dodgerblue" size="4">&nbsp;&nbsp;&nbsp;&nbsp;教育经历：</font>
+				</b>
+				<div class="line"></div>
+				<div class="linedown">
+					<h4>2007.9.1 xx小学</h4>
+					<h4>2013.9.1 xx初中</h4>
+					<h4>2016.9.1 xx高中</h4>
+					<h4>2019.9.1 xx大学</h4>
+				</div>
+
+				<!-- 个人工作经历 -->
+				<b class="lineup">
+					<font color="dodgerblue" size="4">&nbsp;&nbsp;&nbsp;&nbsp;工作经历：</font>
+				</b>
+				<div class="line"></div>
+				<div class="linedown">
+					<h4>2020.01.01-05.01 美团外卖 配送<br />
+						2020.05.02-10.01 饿了么 配送<br />
+						2020.10.01-12.31 滴滴 专车<br />
+						2021.01.01-05.01 曹操 顺风车
+					</h4>
+				</div>
+			</div>
+
+			<!--右侧内容-->
+			<div class="div-right">
+				<div class="div-rightname">
+					<font size="6">张时贰</font>
+				</div>
+				<div class="div-rightname">求职意向：Java开发工程师</div>
+				<div class="div-righttitle">
+					<font size="4" color="floralwhite">教育背景</font>
+				</div>
+				<div class="div-righttext">
+					<font size="4">
+						&nbsp;&nbsp;&nbsp;&nbsp;计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;本科&nbsp;&nbsp;&nbsp;&nbsp;2019.9.6-2023.6
+					</font><br /><br />
+					<font size="4">主修课程：</font><br /><br />
+					<font size="4">计算机网络、C++、<br />Java基础、计算机操作系统、<br />数据库原理、计算机组成原理<br />JAVA WEB、Python</font>
+				</div>
+
+				<div class="div-righttitle">
+					<font size="4" color="floralwhite">项目经验</font>
+				</div>
+				<div class="div-righttext">
+					<font size="4">仿apple官网网页界面设计</font><br /><br />
+					<font size="4">学生管理系统</font><br /><br />
+				</div>
+
+				<div class="div-righttitle">
+					<font size="4" color="floralwhite">家庭情况</font>
+				</div>
+				<div class="div-righttext">
+					<table>
+						<!-- 家庭情况 -->
+						<tr height="30px">
+							<td rowspan="4" width="5%" style="font-weight: 700;padding: 0 8px;">家庭情况</td>
+							<td>关系</td>
+							<td>姓名</td>
+							<td colspan="2">出生年月</td>
+							<td>政治面貌</td>
+							<td colspan="3">工作单位</td>
+						</tr>
+						<tr height="30px">
+							<td></td>
+							<td></td>
+							<td colspan="2"></td>
+							<td></td>
+							<td colspan="3"></td>
+						</tr>
+						<tr height="30px">
+							<td></td>
+							<td></td>
+							<td colspan="2"></td>
+							<td></td>
+							<td colspan="3"></td>
+						</tr>
+						<tr height="30px">
+							<td></td>
+							<td></td>
+							<td colspan="2"></td>
+							<td></td>
+							<td colspan="3"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

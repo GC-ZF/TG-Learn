@@ -43,8 +43,8 @@
 # Second-semester-of-junior-year
 >* 🔄3D modeling technology
 >   * Experient
->     * Experiment 1 wedding car.max & .png & .docx
->     * Experiment 2 Table.max & .png & .docx
+>     * Experiment 1 wedding car.max & .png & .pdf
+>     * Experiment 2 Table.max & .png & .pdf
 >   * Task
 >     * 3.7 Chair.max & .png
 >     * 3.11 DNA.max & .png

@@ -42,12 +42,16 @@
 
 # Second-semester-of-junior-year
 >* 🔄3D modeling technology
->   * 3.7 Chair.max
->   * 3.7 Chair.png
->   * 3.11 DNA.max
->   * 3.11 DNA.png
->   * 3.21 Chopsticks.max
->   * 3.21 Chopsticks.png
+>   * Experient
+>     * Experiment 1 wedding car.max & .png & .docx
+>     * Experiment 2 Table.max & .png & .docx
+>   * Task
+>     * 3.7 Chair.max
+>     * 3.7 Chair.png
+>     * 3.11 DNA.max
+>     * 3.11 DNA.png
+>     * 3.21 Chopsticks.max
+>     * 3.21 Chopsticks.png
 >* 🔄JAVA WEB
 >   * 3.9 Personal information.html
 >   * 3.9 image.png

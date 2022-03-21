@@ -42,10 +42,12 @@
 
 # Second-semester-of-junior-year
 >* 🔄3D modeling technology
->   * Chair.max
->   * Chair.png
->   * DNA.max
->   * DNA.png
+>   * 3.7 Chair.max
+>   * 3.7 Chair.png
+>   * 3.11 DNA.max
+>   * 3.11 DNA.png
+>   * 3.21 Chopsticks.max
+>   * 3.21 Chopsticks.png
 >* 🔄JAVA WEB
 >   * 3.9 Personal information.html
 >   * 3.9 image.png

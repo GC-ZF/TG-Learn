@@ -46,19 +46,13 @@
 >     * Experiment 1 wedding car.max & .png & .docx
 >     * Experiment 2 Table.max & .png & .docx
 >   * Task
->     * 3.7 Chair.max
->     * 3.7 Chair.png
->     * 3.11 DNA.max
->     * 3.11 DNA.png
->     * 3.21 Chopsticks.max
->     * 3.21 Chopsticks.png
+>     * 3.7 Chair.max & .png
+>     * 3.11 DNA.max & .png
+>     * 3.21 Chopsticks.max & .png
 >* 🔄JAVA WEB
->   * 3.9 Personal information.html
->   * 3.9 image.png
->   * 3.12 National Scholarship Application Form.html
->   * 3.12 image.png
->   * 3.13 Personal basic information form
->   * 3.13 image.png
+>   * 3.9 Personal information.html & .png
+>   * 3.12 National Scholarship Application Form.html & .png
+>   * 3.13 Personal basic information form & .png
 
 # 如何下载
 <h2>1.下载整个仓库</h2>

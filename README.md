@@ -52,7 +52,7 @@
 >* 🔄JAVA WEB
 >   * 3.9 Personal information.html & .png
 >   * 3.12 National Scholarship Application Form.html & .png
->   * 3.13 Personal basic information form & .png
+>   * 3.13 Personal basic information form.html & .png
 
 # 如何下载
 <h2>1.下载整个仓库</h2>

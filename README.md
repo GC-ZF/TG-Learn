@@ -53,6 +53,9 @@
 >   * 3.9 Personal information.html & .png
 >   * 3.12 National Scholarship Application Form.html & .png
 >   * 3.13 Personal basic information form.html & .png
+>* 🔄Python
+>   * 3.18 reverse number.py
+>   * 3.23 score.py
 
 # 如何下载
 <h2>1.下载整个仓库</h2>

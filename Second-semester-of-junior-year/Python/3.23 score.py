@@ -14,7 +14,7 @@ while i<person:
     while flag==0:
         if score>100 or score<0:
             score = int(input("输入有误,请重新输入"))
-        if score<=100 and score>0:
+        else:
             flag=1
     total = total + score
     i=i+1

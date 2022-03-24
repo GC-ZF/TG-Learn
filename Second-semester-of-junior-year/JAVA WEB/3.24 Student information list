@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>学生信息列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/3.24%20学生信息列表.css" />
+    /* 自行分离css */
+		<style type="text/css">
+			/* ul */
+			#msgList-ul {
+				margin: 100px;
+				display: flex;
+				/* 设置flex容器 */
+				flex-wrap: wrap;
+				/* 允许li块元素随页面大小换行 */
+				white-space: nowrap;
+				/* 文本不换行 */
+				list-style-type: none;
+				/* 去除列表样式 */
+			}
+			
+			/* 女生背景 */
+			.female {
+				height: 400px;
+				width: 330px;
+				margin-top: 40px;
+				background-color: #ffccdd;
+				border-radius: 20px;
+				box-shadow: 0 0 0.5rem 0.5rem #999;
+				margin-left: 50px;
+			}
+			
+			/* 男生背景 */
+			.male {
+				height: 400px;
+				width: 330px;
+				margin-top: 40px;
+				background-color: #abccff;
+				border-radius: 20px;
+				box-shadow: 0 0 0.5rem 0.5rem #999;
+				margin-left: 50px;
+			}
+			
+			/* 图片 */
+			.img-div {
+				margin: 20px 30px;
+			}
+			
+			.img {
+				height: 200px;
+				border-radius: 20px;
+				/* 边框圆角 */
+				border: 2px solid #F2F2F2;
+				/* 边框粗细风格颜色 */
+			}
+			
+			/* 个人信息div */
+			.msg-span-div {
+				margin-left: 35px;
+				margin-top: -20px;
+			}
+			
+			/* 姓名 */
+			.name-span {
+				font-size: 20px;
+				font-weight: 1000;
+			}
+			
+			/* 性别 */
+			.sex-span {
+				font-size: 20px;
+				margin-left: 150px;
+			}
+			
+			/* 女兴趣爱好 */
+			.female .like-span span {
+				width: 50px;
+				height: 30px;
+				color: #F0FFFF;
+				font-weight: 1000;
+				border-radius: 10px;
+				/* 设置盒子为行内块 */
+				display: inline-block;
+				background-color: #ff8844;
+				/* 设置盒子内元素水平居中 */
+				text-align: center;
+				/* 设置盒子内容垂直居中 */
+				line-height: 30px;
+			}
+			
+			/* 男兴趣爱好 */
+			.male .like-span span {
+				width: 50px;
+				height: 30px;
+				color: #F0FFFF;
+				border-radius: 10px;
+				/* 设置盒子为行内块 */
+				display: inline-block;
+				background-color: #4488ff;
+				/* 设置盒子内元素水平居中 */
+				text-align: center;
+				/* 设置盒子内容垂直居中 */
+				line-height: 30px;
+			}
+			
+			/* 使.msg-span-div下的span为块元素独自一行 */
+			.msg-span-div span {
+				width: 10px;
+				display: block;
+				margin-top: 6px;
+			}
+			
+			/* 单独设置姓名和性别为行内块，在同一行 */
+			.msg-span-div span span {
+				width: 10px;
+				display: inline-block;
+				margin-top: 6px;
+			}
+			
+			/* 设置触发样式 */
+			li:hover{
+				transform: scale(1.1);
+				cursor: pointer;/* 鼠标样式 */
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="msgList-ul">
+
+			<li class="female">
+				<div class="img-div">
+					<img class="img" src="../img/9901.png">
+				</div>
+				<div class="msg-span-div">
+					<span>182056101</span>
+					<span>
+						<span class="name-span">张伞</span>
+						<span class="sex-span">女</span>
+					</span>
+					<span class="depart-span">计算机工程系</span>
+					<span class="like-span">
+						<span>读书</span>
+						<span>篮球</span>
+					</span>
+				</div>
+			</li>
+
+			<li class="male">
+				<div class="img-div">
+					<img class="img" src="../img/9902.png">
+				</div>
+				<div class="msg-span-div">
+					<span>182056102</span>
+					<span>
+						<span class="name-span">李斯</span>
+						<span class="sex-span">男</span>
+					</span>
+					<span class="depart-span">计算机工程系</span>
+					<span class="like-span">
+						<span>读书</span>
+						<span>音乐</span>
+						<span>学习</span>
+					</span>
+				</div>
+			</li>
+
+			<li class="male">
+				<div class="img-div">
+					<img class="img" src="../img/9903.png">
+				</div>
+				<div class="msg-span-div">
+					<span>172056103</span>
+					<span>
+						<span class="name-span">王武</span>
+						<span class="sex-span">男</span>
+					</span>
+					<span class="depart-span">计算机工程系</span>
+					<span class="like-span">
+						<span>读书</span>
+						<span>篮球</span>
+						<span>音乐</span>
+					</span>
+				</div>
+			</li>
+
+			<li class="female">
+				<div class="img-div">
+					<img class="img" src="../img/9904.png">
+				</div>
+				<div class="msg-span-div">
+					<span>172056101</span>
+					<span>
+						<span class="name-span">赵柳</span>
+						<span class="sex-span">女</span>
+					</span>
+					<span class="depart-span">计算机工程系</span>
+					<span class="like-span">
+						<span>读书</span>
+						<span>学习</span>
+						<span>音乐</span>
+					</span>
+				</div>
+			</li>
+
+		</ul>
+	</body>
+</html>

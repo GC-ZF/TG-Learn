@@ -53,6 +53,7 @@
 >   * 3.9 Personal information.html & .png
 >   * 3.12 National Scholarship Application Form.html & .png
 >   * 3.13 Personal basic information form.html & .png
+>   * 3.24 Student information list.html & .png & .gif
 >* 🔄Python
 >   * 3.18 reverse number.py
 >   * 3.23 score.py

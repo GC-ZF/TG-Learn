@@ -45,6 +45,7 @@
 >   * Experient
 >     * Experiment 1 wedding car.max & .png & .pdf
 >     * Experiment 2 Table.max & .png & .pdf
+>     * Experiment 3 Log.max & .png & .pdf
 >   * Task
 >     * 3.7 Chair.max & .png
 >     * 3.11 DNA.max & .png

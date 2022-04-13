@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 表格和文本内容居中 */
+			* {
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			table {
+				border: black 0.0625rem solid;
+				border-collapse: collapse;
+				/* 合并 */
+			}
+
+			/* 行列属性 */
+			td,th {
+				border: black 0.0625rem solid;
+			}
+
+			/* 标题属性 */
+			caption {
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="650px">
+			<!-- 标题 -->
+			<caption style="padding-bottom: 20px;">国家奖学金申请表</caption>
+			<caption style="font-size: 20px;">
+				<div style="padding: 5px;font-weight: 600;">
+					<span style="float: left;">学校:xx大学</span>
+					<span style="margin-left: 15px;">院系:xxxxxxxx</span>
+					<span style="margin-left: 20px;">学号:xxxxxxxxx</span>
+				</div>
+			</caption>
+
+			<!-- 基本情况 -->
+			<tr>
+				<td rowspan="4" width="10%" style="font-weight: 800;padding: 0 8px;">基本情况</td>
+				<td width="12%">姓名</td>
+				<td width="15%">张时贰</td>
+				<td width="10%">性别</td>
+				<td width="13%">男</td>
+				<td width="10%">出生年月</td>
+				<td width="30%">2001.10.20</td>
+			</tr>
+
+			<tr>
+				<td>政治面貌</td>
+				<td>群众</td>
+				<td>民族</td>
+				<td>汉</td>
+				<td>入学时间</td>
+				<td>2019.09.01</td>
+			</tr>
+
+			<tr>
+				<td>专业</td>
+				<td>计算机科学与技术</td>
+				<td>学制</td>
+				<td>4年</td>
+				<td>联系电话</td>
+				<td>1310446718</td>
+			</tr>
+
+			<tr>
+				<td>身份证号</td>
+				<td colspan="5" style="padding: 0px;">
+					<table style="width: 100%;height: 45px;border: hidden;">
+						<tr>
+							<td>1</td><td>2</td><td>2</td><td>1</td><td>2</td><td>2</td><td>2</td>
+							<td>1</td><td>2</td><td>2</td><td>1</td><td>2</td><td>2</td><td>2</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- 学习情况 -->
+			<tr height="40px">
+				<td rowspan="2" style="font-weight: 800;padding: 0 8px;">学习情况</td>
+				<td colspan="3">成绩排名:<u>10;/100;</u>(名次/总人数)</td>
+				<td colspan="3">实行综合考评排名:是<input type="checkbox">否<input type="checkbox"></td>
+			</tr>
+
+			<tr height="40px">
+				<td colspan="3">必修课<u>20</u>门,其中及格以上<u>20</u>门</td>
+				<td colspan="3">如是,排名:<u>10/100</u>(名次/总人数)</td>
+			</tr>
+
+			<!-- 大学期间获奖情况 -->
+			<tr>
+				<td rowspan="5" style="font-weight: 800;padding: 0 8px;">大学期间主要获奖情况</td>
+				<td>日期</td>
+				<td colspan="2">获奖名称</td>
+				<td colspan="3">颁奖单位</td>
+			</tr>
+
+			<tr style="height: 20px;">
+				<td>2021.06.11</td>
+				<td colspan="2">优秀志愿者</td>
+				<td colspan="3">院团委</td>
+			</tr>
+
+			<tr style="height: 20px;">
+				<td>2021.12.15</td>
+				<td colspan="2">英语四级</td>
+				<td colspan="3">大学英语等级考试</td>
+			</tr>
+
+			<tr style="height: 20px;">
+				<td>2021.10.15</td>
+				<td colspan="2">社会实践二等奖</td>
+				<td colspan="3">院团委</td>
+			</tr>
+
+			<tr style="height: 20px;">
+				<td></td>
+				<td colspan="2"></td>
+				<td colspan="3"></td>
+			</tr>
+
+			<!-- 申请理由 -->
+			<tr>
+				<td style="height: 200px;"><b>申请<br>理由</b>(200字)</td>
+				<td colspan="6">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;本人自入学以来一直对自己严格妥求，在各方面认真努力行人生目标。
+						思想上，作为预各党员。积极向优秀党员学习，认真学习并跤行党章的内容，不断提高自己的党性
+						修荞.工作上，作为班长我一直兢兢业业，积极配合班主任和系里老师做好学生工作.团结同学，使
+						大家都能够和睦相处,积极参与学校的社团,各项活动及勒工助学岗位.学习上.我一直严格要求自己。
+						入学以来各学期成绩优异，拿过多次一等奖学金.在专业方面考取了计算机二级。三级，四级证书，
+						已成功完成大学生</p>
+					<p style="margin-left: -480px;">创新创业项目</p>
+					<br /><br /><br /><br /><br /><br />
+					<p>
+					<pre>
+                            申请人签名(手签):张时贰
+                            
+                             2022年03月13日
+                        </pre>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

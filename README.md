@@ -52,6 +52,7 @@
 >     * 3.7 Chair.max & .png
 >     * 3.11 DNA.max & .png
 >     * 3.21 Chopsticks.max & .png
+>     * 4.18 Terran airport model1.max & .png
 >* 🔄JAVA WEB
 >   * Task
 >     * 3.9 Personal information.html & .png

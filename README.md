@@ -59,6 +59,7 @@
 >     * 3.12 National Scholarship Application Form.html & .png
 >     * 3.13 Personal basic information form.html & .png
 >     * 3.24 Student information list.html & .png & .gif
+>     * 4.18 JS 实现学生列表及增加、删除修改.zip & 简略版 & .gif
 >* 🔄Python
 >   * 3.18 reverse number.py
 >   * 3.23 score.py

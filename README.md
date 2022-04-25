@@ -48,6 +48,7 @@
 >     * Experiment 3 Log.max & .png & .pdf
 >     * Experiment 4 Road.max & .png & .pdf
 >     * Experiment 5 Wine bottle.max & .png & .pdf
+>     * Experiment 6 fruit plate.max & .png & .pdf
 >   * Task
 >     * 3.7 Chair.max & .png
 >     * 3.11 DNA.max & .png

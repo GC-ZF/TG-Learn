@@ -42,31 +42,34 @@
 
 # Second-semester-of-junior-year
 >* 🔄3D modeling technology
->  * Experient
->    * Experiment 1 wedding car.max & .png & .pdf
->    * Experiment 2 Table.max & .png & .pdf
->    * Experiment 3 Log.max & .png & .pdf
->    * Experiment 4 Road.max & .png & .pdf
->    * Experiment 5 Wine bottle.max & .png & .pdf
->    * Experiment 6 fruit plate.max & .png & .pdf
->  * Task
->    * 3.7 Chair.max & .png
->    * 3.11 DNA.max & .png
->    * 3.21 Chopsticks.max & .png
->    * 4.18 Terran airport model1.max & .png
+>   * Experient
+>     * Experiment 1 wedding car.max & .png & .pdf
+>     * Experiment 2 Table.max & .png & .pdf
+>     * Experiment 3 Log.max & .png & .pdf
+>     * Experiment 4 Road.max & .png & .pdf
+>     * Experiment 5 Wine bottle.max & .png & .pdf
+>     * Experiment 6 fruit plate.max & .png & .pdf
+>   * Task
+>     * 3.7 Chair.max & .png
+>     * 3.11 DNA.max & .png
+>     * 3.21 Chopsticks.max & .png
+>     * 4.18 Terran airport model1.max & .png
+>    
 >* 🔄JAVA WEB
->  * Task
->    * 3.9 Personal information.html & .png
->    * 3.12 National Scholarship Application Form.html & .png
->    * 3.13 Personal basic information form.html & .png
->    * 3.24 Student information list.html & .png & .gif
->    * 4.18 JS 实现学生列表及增加、删除修改.zip & 简略版 & .gif
+>   * Task
+>     * 3.9 Personal information.html & .png
+>     * 3.12 National Scholarship Application Form.html & .png
+>     * 3.13 Personal basic information form.html & .png
+>     * 3.24 Student information list.html & .png & .gif
+>     * 4.18 JS 实现学生列表及增加、删除修改.zip & 简略版 & .gif
+>    
 >* 🔄Python
->  * 3.18 reverse number.py
->  * 3.23 score.py
+>   * 3.18 reverse number.py
+>   * 3.23 score.py
+>  
 >* 🔄Microcomputer principle
->  * Experient
->    * Experiment 1.asm & .pdf
+>   * Experient
+>     * Experiment 1.asm & .pdf
 
 # 如何下载
 <h2>1.下载整个仓库</h2>

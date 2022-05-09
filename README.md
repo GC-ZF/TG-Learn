@@ -11,6 +11,7 @@
 * 无🛫✈，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
 
 **📣目录**
+- [Other](#Other)
 - [First-semester-of-junior-year](#First-semester-of-junior-year)
 - [Second-semester-of-junior-year](#Second-semester-of-junior-year)
 - [如何下载](#如何下载)

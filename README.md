@@ -14,7 +14,16 @@
 - [First-semester-of-junior-year](#First-semester-of-junior-year)
 - [Second-semester-of-junior-year](#Second-semester-of-junior-year)
 - [如何下载](#如何下载)
-
+# Other
+>* 🔚C++程序设计A2
+>   * 实验1 类和对象
+>   * 实验2 构造函数的重载
+>   * 实验3 友元函数
+>   * 实验4 继承与派生1
+>   * 实验5 继承与派生2
+>   * 实验6 多态的应用1
+>   * 实验7 多态性的应用2
+>   * 实验8 虚函数和抽象类
 # First-semester-of-junior-year
 >* 🔚MFC(基于C++的计算机图形学)
 >   * 实验1 十二面体.zip

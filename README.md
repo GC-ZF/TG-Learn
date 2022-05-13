@@ -75,8 +75,12 @@
 >     * 4.18 JS 实现学生列表及增加、删除修改.zip & 简略版 & .gif
 >    
 >* 🔄Python
->   * 3.18 reverse number.py
->   * 3.23 score.py
+>   * Task
+>     * 3.18 reverse number.py
+>     * 3.23 score.py
+>     * 3.30 Case.py
+>   * Experiment
+>     * Experiment 1 程序设计结构.py & pdf
 >  
 >* 🔄Microcomputer principle
 >   * Experient

@@ -30,6 +30,7 @@
 >  * 高校人员信息管理系统char版
 >  * 高校人员信息管理系统string版
 >  * 高校人员信息管理系统流程图
+>  * C++程序设计A2课程设计报告PDF
 # First-semester-of-junior-year
 >* 🔚MFC(基于C++的计算机图形学)
 >   * 实验1 十二面体.zip
@@ -71,7 +72,6 @@
 >    * 3.11 DNA.max & .png
 >    * 3.21 Chopsticks.max & .png
 >    * 4.18 Terran airport model1.max & .png
->  
 >* 🔄JAVA WEB
 >  * Task
 >    * 3.9 Personal information.html & .png
@@ -79,7 +79,6 @@
 >    * 3.13 Personal basic information form.html & .png
 >    * 3.24 Student information list.html & .png & .gif
 >    * 4.18 JS 实现学生列表及增加、删除修改.zip & 简略版 & .gif
->
 >* 🔄Python
 >  * Task
 >    * 3.18 reverse number.py
@@ -87,7 +86,7 @@
 >    * 3.30 Case.py
 >  * Experiment
 >    * Experiment 1 程序设计结构.py & pdf
->
+>    * Experiment 2 组合数据.py & pdf
 >* 🔄Microcomputer principle
 >  * Experient
 >    * Experiment 1.asm & .pdf

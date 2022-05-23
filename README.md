@@ -98,16 +98,16 @@
 <h2>1.下载整个仓库</h2>
 
 有**Git软件**用`git clone [url]`。没有**Git软件**下载后自行解压</br>
-<img alt="Download ZIP" height=200px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Download%20ZIP.jpg">
+<img alt="Download ZIP" height=200px src="https://fastly.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Download%20ZIP.jpg">
 
 <h2>2.下载单个文件</h2>
 
 `右击RAW->将链接另存为`</br>
-<img alt="RAW Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/RAW%20Download.jpg">
+<img alt="RAW Download" height=300px src="https://fastly.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/RAW%20Download.jpg">
 
 **.zip、.png、.jpg** 等可以直接 `Download`</br>
-<img alt="ZIP Download" height=200px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download1.jpg">
+<img alt="ZIP Download" height=200px src="https://fastly.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/ZIP%20Download1.jpg">
 <h2>3.下载单个文件夹</h2>
 
 仓库界面按<kbd>。</kbd>号进入Web editor，右击文件夹或文件</br>
-<img alt="Web editor Download" height=300px src="https://cdn.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Web%20editor%20Download.jpg">
+<img alt="Web editor Download" height=300px src="https://fastly.jsdelivr.net/gh/GC-ZF/TG-Learn/Img/Web%20editor%20Download.jpg">

@@ -65,8 +65,10 @@
 >     * Experiment 4 Road.max & .png & .pdf
 >     * Experiment 5 Wine bottle.max & .png & .pdf
 >     * Experiment 6 fruit plate.max & .png & .pdf
->     * Experiment 7 Conch.max & .png & .pdf
->     * Experiment 8 Mine car.max & .png & .pdf
+>     * Experiment 7 Mine car.max & .png & .pdf
+>     * Experiment 8 Conch.max & .png & .pdf
+>     * Experiment 9 Debris.max & .png & .pdf
+>     * Experiment 10 Volleyball.max & .png & .pdf
 >   * Task
 >     * 3.7 Chair.max & .png
 >     * 3.11 DNA.max & .png

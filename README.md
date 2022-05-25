@@ -89,6 +89,7 @@
 >   * Experiment
 >     * Experiment 1 程序设计结构.py & pdf
 >     * Experiment 2 组合数据.py & pdf
+>     * Experiment 3 函数.py & pdf
 >* 🔄Microcomputer principle
 >   * Experient
 >     * Experiment 1.asm & .pdf

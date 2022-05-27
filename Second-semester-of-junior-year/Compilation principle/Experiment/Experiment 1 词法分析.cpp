@@ -178,7 +178,7 @@ void main()
 		label[i] = NULL;
 		consts[i] = NULL;
 	}
-	if ((fp = fopen("../example.c", "r")) == NULL)
+	if ((fp = fopen("../Experiment 1 example.c", "r")) == NULL)
 		printf("error");
 	else
 	{

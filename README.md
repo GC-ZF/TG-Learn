@@ -92,10 +92,12 @@
 >     * Experiment 3 函数.py & pdf
 >* 🔄Microcomputer principle
 >   * Experient
->     * Experiment 1.asm & .pdf
->     * Experiment 2.asm & .pdf
->     * Experiment 3.asm & .pdf
-
+>     * Experiment 1 输入输出.asm & .pdf
+>     * Experiment 2 分支程序.asm & .pdf
+>     * Experiment 3 循环程序.asm & .pdf
+>* 🔄Compilation principle
+>   * Experient
+>     * Experiment 1 词法分析.cpp & .c & .pdf
 # 如何下载
 <h2>1.下载整个仓库</h2>
 

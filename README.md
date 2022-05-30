@@ -21,6 +21,7 @@
   <img alt="CSDN" height="30px" src="https://user-images.githubusercontent.com/94956933/154077484-0d9978d5-7d0e-44d1-b888-22ebf9c96db8.png" />
 </a>，个人博客<a href="https://zhangshier.vip/"><img alt="CSDN" height="50px"  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13139801834%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654947817&t=ca16c80c2dd6e3fea3fbecafa948301a"/>👈</a>同步更新
 
+# 仓库文件概览
 **📞notice:**  
 * 🔄标记为暂时存储，短时间内可能会有更改或删除，需要的自行`clone`
 * 🔚标记长期不做更改
@@ -32,7 +33,7 @@
 - [First-semester-of-junior-year](#First-semester-of-junior-year)
 - [Second-semester-of-junior-year](#Second-semester-of-junior-year)
 - [如何下载](#如何下载)
-# Other
+## Other
 * 🔚C++程序设计A2实验
    * 实验1 类和对象
    * 实验2 构造函数的重载
@@ -47,7 +48,7 @@
    * 高校人员信息管理系统string版
    * 高校人员信息管理系统流程图
    * C++程序设计A2课程设计报告PDF
-# First-semester-of-junior-year
+## First-semester-of-junior-year
 * 🔚MFC(基于C++的计算机图形学)
    * 实验1 十二面体.zip
    * 实验1 正八面体.zip
@@ -72,7 +73,7 @@
    * APPLE
    * 小米闪购
 
-# Second-semester-of-junior-year
+## Second-semester-of-junior-year
 * 🔄3D modeling technology
    * Experient
      * Experiment 1 wedding car.max & .png & .pdf
@@ -117,7 +118,7 @@
 * 🔄Compilation principle
    * Experient
      * Experiment 1 词法分析.cpp & .c & .pdf
-# 如何下载
+## 如何下载
 <h2>1.下载整个仓库</h2>
 
 有**Git软件**用`git clone [url]`。没有**Git软件**下载后自行解压</br>

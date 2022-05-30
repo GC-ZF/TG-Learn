@@ -1,9 +1,25 @@
-<h1 align="center">TG Learn's introduce</h1>
+<h1 align="center">☀ TG Learn's introduce</h1>
+
+<p align="center">
+  <a href="https://github.com/GC-ZF/TG-Learn/issues">Github</a>&nbsp&nbsp| 
+  <a href="https://gitee.com/gc-zhang/TG-Learn/issues">Gitee</a>&nbsp&nbsp|
+  <a href="https://blog.csdn.net/qq_49488584">CSDN</a>&nbsp&nbsp|
+  <a href="https://zhangshier.vip/about/">个人博客</a>&nbsp&nbsp|
+  <a href="https://gitee.com/gc-zhang/TG-Learn/issues">QQ</a>
+</p>
+
+<b><p align="center">学如逆水行舟，不进则退<br>心似平原走马，易放难追</p></b>
+
+本仓库记录小张大学的学习，所有的代码都是可以直接运行的，有任何错误、需要改正的地方，欢迎指正！你可以通过仓库发起Issues或者通过另外三种方式私信我
+
+
+
+# 📢公告
+感谢访问本仓库，若喜欢请收藏，star支持一下 ✿✿ヽ(°▽°)ノ✿
 
 一般情况都会将代码的思路和讲解发在博客:point_right:<a href="https://blog.csdn.net/qq_49488584?type=lately">
   <img alt="CSDN" height="30px" src="https://user-images.githubusercontent.com/94956933/154077484-0d9978d5-7d0e-44d1-b888-22ebf9c96db8.png" />
-</a><br>
-个人博客<a href="https://zhangshier.vip/"><img alt="CSDN" height="50px"  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13139801834%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654947817&t=ca16c80c2dd6e3fea3fbecafa948301a"/>👈</a>同步更新
+</a>，个人博客<a href="https://zhangshier.vip/"><img alt="CSDN" height="50px"  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13139801834%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654947817&t=ca16c80c2dd6e3fea3fbecafa948301a"/>👈</a>同步更新
 
 **📞notice:**  
 * 🔄标记为暂时存储，短时间内可能会有更改或删除，需要的自行`clone`
@@ -11,7 +27,7 @@
 * 本仓库原地址<a href="https://github.com/GC-ZF/TG-Learn.git">Github repo</a>
 * 无🛫✈，点击<a href="https://gitee.com/gc-zhang/TG-Learn.git">Gitee repo</a>(本仓库的镜像)
 
-**📣目录**
+**📣文件目录**
 - [Other](#Other)
 - [First-semester-of-junior-year](#First-semester-of-junior-year)
 - [Second-semester-of-junior-year](#Second-semester-of-junior-year)

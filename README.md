@@ -1,10 +1,10 @@
 <h1 align="center">☀ TG Learn's introduce</h1>
 
 <p align="center">
-  <a href="https://github.com/GC-ZF/TG-Learn/issues">Github</a>&nbsp&nbsp| 
-  <a href="https://gitee.com/gc-zhang/TG-Learn/issues">Gitee</a>&nbsp&nbsp|
-  <a href="https://blog.csdn.net/qq_49488584">CSDN</a>&nbsp&nbsp|
-  <a href="https://zhangshier.vip/about/">个人博客</a>&nbsp&nbsp|
+  <a href="https://github.com/GC-ZF/TG-Learn/issues">Github</a> | 
+  <a href="https://gitee.com/gc-zhang/TG-Learn/issues">Gitee</a> |
+  <a href="https://blog.csdn.net/qq_49488584">CSDN</a> |
+  <a href="https://zhangshier.vip/about/">个人博客</a> |
   <a href="http://wpa.qq.com/msgrd?v=3&uin=1310446718&site=qq&menu=yes">QQ</a>
 </p>
 

@@ -72,6 +72,11 @@
 * 🔚HTML5(HTML练习仿APPLE和小米首页)
    * APPLE
    * 小米闪购
+* 🔚SQL Server
+   * 实验一 在SQL Server中创建数据库
+   * 实验二 查询
+   * 实验三 数据库安全性与完整性实验
+   * 实验四 触发器与存储过程实验   
 
 ## Second-semester-of-junior-year
 * 🔄3D modeling technology

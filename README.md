@@ -93,6 +93,8 @@
      * Experiment 10 Volleyball.max & .png & .pdf
      * Experiment 11 Glass.max & .png & .pdf
      * Experiment 12 Stone.max & .png & .pdf
+     * Experiment 13 Basketball.max & .png & .pdf
+     * Experiment 14 Plane.max & .png & .pdf
    * Task
      * 3.7 Chair.max & .png
      * 3.11 DNA.max & .png

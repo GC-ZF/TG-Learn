@@ -119,6 +119,7 @@
      * Experiment 4 面向对象程序设计.py & pdf
      * Experiment 5 模块、包和库.py & pdf
      * Experiment 6 文件访问.py & pdf
+     * Experiment 7 异常处理和单元测试.py & pdf
 * 🔄Microcomputer principle
    * Experient
      * Experiment 1 输入输出.asm & .pdf

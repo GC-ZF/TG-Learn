@@ -2,71 +2,71 @@
 using namespace std;
 #include<string>
 #include <fstream>
-#define MAX 200	//Ã¿Ò»ÀàÈËÔ±ÉÏÏŞ200
+#define MAX 200	//æ¯ä¸€ç±»äººå‘˜ä¸Šé™200
 
-//ÉùÃ÷È«¾Öº¯Êı
-void Statistics();//Í³¼Æº¯Êı
-void Statisticstotal();//Í³¼Æ×ÜÈËÊı
-void Statisticman();//Í³¼ÆÄĞÔ±¹¤
-void Statisticwomen();//Í³¼ÆÅ®Ô±¹¤
-void Statisticage();//Í³¼ÆÄêÁä¶Î
-//ÈË Àà
+//å£°æ˜å…¨å±€å‡½æ•°
+void Statistics();//ç»Ÿè®¡å‡½æ•°
+void Statisticstotal();//ç»Ÿè®¡æ€»äººæ•°
+void Statisticman();//ç»Ÿè®¡ç”·å‘˜å·¥
+void Statisticwomen();//ç»Ÿè®¡å¥³å‘˜å·¥
+void Statisticage();//ç»Ÿè®¡å¹´é¾„æ®µ
+//äºº ç±»
 class Person
 {
 public:
-	char id[10];	//±àºÅ
-	char name[5];//ĞÕÃû
-	char sex[10];//ĞÔ±ğ
-	int age;  //ÄêÁä
+	char id[10];	//ç¼–å·
+	char name[5];//å§“å
+	char sex[10];//æ€§åˆ«
+	int age;  //å¹´é¾„
 };
 
-//½ÌÊ¦Àà
+//æ•™å¸ˆç±»
 class Teacher :virtual public Person
 {
-	friend class Tea_Po; //ÉùÃ÷ÓÑÔª£¬½ÌÊ¦¼æĞĞÕşÈËÔ±Àà·ÃÎÊ½ÌÊ¦Ë½ÓĞ±äÁ¿
+	friend class Tea_Po; //å£°æ˜å‹å…ƒï¼Œæ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç±»è®¿é—®æ•™å¸ˆç§æœ‰å˜é‡
 public:
-	void Add();//Ìí¼Ó
-	void Seach();//²éÑ¯
-	void Show();//ÏÔÊ¾
-	void Edit();//±à¼­
-	void Delete();//É¾³ı
-	void Save();//±£´æ
-	void Read();//¶ÁÈ¡
-	void Seachid();//±àºÅ²éÑ¯
-	void Seachname();//ĞÕÃû²éÑ¯
+	void Add();//æ·»åŠ 
+	void Seach();//æŸ¥è¯¢
+	void Show();//æ˜¾ç¤º
+	void Edit();//ç¼–è¾‘
+	void Delete();//åˆ é™¤
+	void Save();//ä¿å­˜
+	void Read();//è¯»å–
+	void Seachid();//ç¼–å·æŸ¥è¯¢
+	void Seachname();//å§“åæŸ¥è¯¢
 	void Showone();
 private:
-	char t_dept[20];//ËùÔÚÏµ²¿
-	char t_major[20];//×¨Òµ
-	char t_title[10];//Ö°³Æ
+	char t_dept[20];//æ‰€åœ¨ç³»éƒ¨
+	char t_major[20];//ä¸“ä¸š
+	char t_title[10];//èŒç§°
 }; Teacher Tea[MAX]; int Teatop = 0;
 
 void Teacher::Add()
 {
-	Teacher t_temp;//ÁÙÊ±±äÁ¿
+	Teacher t_temp;//ä¸´æ—¶å˜é‡
 	if (Teatop < MAX)
 	{
-		cout << "±àºÅ:"; cin >> t_temp.id;
+		cout << "ç¼–å·:"; cin >> t_temp.id;
 		for (int i = 0; i < Teatop; i++)
 		{
 			if (!strcmp(Tea[i].id, t_temp.id))
 			{
-				cout << "idÒÑ´æÔÚ" << endl;
+				cout << "idå·²å­˜åœ¨" << endl;
 				return;
 			}
 		}
-		cout << "ĞÕÃû:"; cin >> t_temp.name;
-		cout << "ĞÔ±ğ:"; cin >> t_temp.sex;
-		cout << "ÄêÁä:"; cin >> t_temp.age;
-		cout << "Ïµ²¿:"; cin >> t_temp.t_dept;
-		cout << "×¨Òµ:"; cin >> t_temp.t_major;
-		cout << "Ö°³Æ:"; cin >> t_temp.t_title;
+		cout << "å§“å:"; cin >> t_temp.name;
+		cout << "æ€§åˆ«:"; cin >> t_temp.sex;
+		cout << "å¹´é¾„:"; cin >> t_temp.age;
+		cout << "ç³»éƒ¨:"; cin >> t_temp.t_dept;
+		cout << "ä¸“ä¸š:"; cin >> t_temp.t_major;
+		cout << "èŒç§°:"; cin >> t_temp.t_title;
 		Tea[Teatop] = t_temp;
 		Teatop++;
 	}
 	else
 	{
-		cout << "µ±Ç°½ÌÊ¦ÒÑÕĞÂú" << endl;
+		cout << "å½“å‰æ•™å¸ˆå·²æ‹›æ»¡" << endl;
 	}
 }
 void Teacher::Seach()
@@ -75,13 +75,13 @@ void Teacher::Seach()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ½ÌÊ¦¹ÜÀíÆ½Ì¨-²éÑ¯       |" << endl;
-		cout << "  |   1.±àºÅ²éÑ¯                 |" << endl;
-		cout << "  |   2.ĞÕÃû²éÑ¯                 |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      æ•™å¸ˆç®¡ç†å¹³å°-æŸ¥è¯¢       |" << endl;
+		cout << "  |   1.ç¼–å·æŸ¥è¯¢                 |" << endl;
+		cout << "  |   2.å§“åæŸ¥è¯¢                 |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -94,7 +94,7 @@ void Teacher::Seach()
 			return;
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 	}
@@ -103,7 +103,7 @@ void Teacher::Show()
 {
 	if (Teatop == 0)
 	{
-		cout << "µ±Ç°½ÌÊ¦ÏµÍ³ÄÚÎª¿Õ" << endl;
+		cout << "å½“å‰æ•™å¸ˆç³»ç»Ÿå†…ä¸ºç©º" << endl;
 	}
 	else
 	{
@@ -120,34 +120,34 @@ void Teacher::Edit()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ½ÌÊ¦¹ÜÀíÆ½Ì¨-±à¼­       |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      æ•™å¸ˆç®¡ç†å¹³å°-ç¼–è¾‘       |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < Teatop; i++)
 			{
 				if (!strcmp(Tea[i].id, sid))
 					break;
 			}
 			if (i == Teatop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> t_temp.id;
-				cout << "ĞÕÃû:"; cin >> t_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> t_temp.sex;
-				cout << "ÄêÁä:"; cin >> t_temp.age;
-				cout << "Ïµ²¿:"; cin >> t_temp.t_dept;
-				cout << "×¨Òµ:"; cin >> t_temp.t_major;
-				cout << "Ö°³Æ:"; cin >> t_temp.t_title;
+				cout << "ç¼–å·:"; cin >> t_temp.id;
+				cout << "å§“å:"; cin >> t_temp.name;
+				cout << "æ€§åˆ«:"; cin >> t_temp.sex;
+				cout << "å¹´é¾„:"; cin >> t_temp.age;
+				cout << "ç³»éƒ¨:"; cin >> t_temp.t_dept;
+				cout << "ä¸“ä¸š:"; cin >> t_temp.t_major;
+				cout << "èŒç§°:"; cin >> t_temp.t_title;
 				Tea[i] = t_temp;
 			}
 			break;
@@ -156,23 +156,23 @@ void Teacher::Edit()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < Teatop; i++)
 			{
 				if (!strcmp(Tea[i].name, sname))
 					break;
 			}
 			if (i == Teatop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> t_temp.id;
-				cout << "ĞÕÃû:"; cin >> t_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> t_temp.sex;
-				cout << "ÄêÁä:"; cin >> t_temp.age;
-				cout << "Ïµ²¿:"; cin >> t_temp.t_dept;
-				cout << "×¨Òµ:"; cin >> t_temp.t_major;
-				cout << "Ö°³Æ:"; cin >> t_temp.t_title;
+				cout << "ç¼–å·:"; cin >> t_temp.id;
+				cout << "å§“å:"; cin >> t_temp.name;
+				cout << "æ€§åˆ«:"; cin >> t_temp.sex;
+				cout << "å¹´é¾„:"; cin >> t_temp.age;
+				cout << "ç³»éƒ¨:"; cin >> t_temp.t_dept;
+				cout << "ä¸“ä¸š:"; cin >> t_temp.t_major;
+				cout << "èŒç§°:"; cin >> t_temp.t_title;
 				Tea[i] = t_temp;
 			}
 			break;
@@ -183,7 +183,7 @@ void Teacher::Edit()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -191,39 +191,39 @@ void Teacher::Delete()
 {
 	if (Teatop == 0)
 	{
-		cout << "µ±Ç°¼ÇÂ¼Îª¿Õ" << endl;
+		cout << "å½“å‰è®°å½•ä¸ºç©º" << endl;
 		return;
 	}
 	while (true)
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ½ÌÊ¦¹ÜÀíÆ½Ì¨-É¾³ı       |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      æ•™å¸ˆç®¡ç†å¹³å°-åˆ é™¤       |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < Teatop; i++)
 			{
 				if (!strcmp(Tea[i].id, sid))
 					break;
 			}
 			if (i == Teatop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < Teatop; i++)
 				{
 					Tea[i] = Tea[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				Teatop--;
 			}
 			break;
@@ -232,21 +232,21 @@ void Teacher::Delete()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < Teatop; i++)
 			{
 				if (!strcmp(Tea[i].name, sname))
 					break;
 			}
 			if (i == Teatop)
-				cout << "ÊäÈëĞÕÃûÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥å§“åæ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < Teatop; i++)
 				{
 					Tea[i] = Tea[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				Teatop--;
 			}
 			break;
@@ -257,16 +257,15 @@ void Teacher::Delete()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
-
 void Teacher::Save()
 {
 	int i;
 	ofstream outfile, outfile1;
-	outfile1.open("Teatop.dat", ios::out);	//Ğ´ÎÄ¼şTeatop.dat
+	outfile1.open("Teatop.dat", ios::out);	//å†™æ–‡ä»¶Teatop.dat
 	outfile1 << Teatop;
 	outfile.open("Tea_data.dat", ios::binary);
 	if (!outfile)
@@ -276,7 +275,7 @@ void Teacher::Save()
 	for (i = 0; i < Teatop; i++)
 		outfile.write((char *)&Tea[i], sizeof(Tea[i]));
 	outfile.close();
-	cout << "±£´æ³É¹¦£¡" << endl;
+	cout << "ä¿å­˜æˆåŠŸï¼" << endl;
 }
 void Teacher::Read()
 {
@@ -292,12 +291,13 @@ void Teacher::Read()
 	for (i = 0; i < Teatop; i++)
 		infile.read((char *)&Tea[i], sizeof(Tea[i]));
 	infile.close();
-	cout << "¶ÁÈ¡³É¹¦£¡" << endl;
+	cout << "è¯»å–æˆåŠŸï¼" << endl;
 }
+
 void Teacher::Seachid()
 {
 	char sid[10];
-	cout << "ÇëÊäÈë±àºÅ" << endl; cin >> sid;
+	cout << "è¯·è¾“å…¥ç¼–å·" << endl; cin >> sid;
 	int i;
 	for (i = 0; i < Teatop; i++)
 	{
@@ -309,13 +309,13 @@ void Teacher::Seachid()
 	}
 	if (i == Teatop)
 	{
-		cout << "¸Ã±àºÅ²»´æÔÚ" << endl;
+		cout << "è¯¥ç¼–å·ä¸å­˜åœ¨" << endl;
 	}
 }
 void Teacher::Seachname()
 {
 	char sname[5];
-	cout << "ÇëÊäÈëĞÕÃû" << endl; cin >> sname;
+	cout << "è¯·è¾“å…¥å§“å" << endl; cin >> sname;
 	int i;
 	for (i = 0; i < Teatop; i++)
 	{
@@ -327,59 +327,59 @@ void Teacher::Seachname()
 	}
 	if (i == Teatop)
 	{
-		cout << "¸ÃĞÕÃû²»´æÔÚ" << endl;
+		cout << "è¯¥å§“åä¸å­˜åœ¨" << endl;
 	}
 }
 void Teacher::Showone()
 {
-	cout << "±àºÅ\t" << id << "\tĞÕÃû\t" << name << "\tĞÔ±ğ\t" << sex << "\tÄêÁä\t" << age << "\tÏµ²¿\t" << t_dept << "\t×¨Òµ\t" << t_major << "\tÖ°³Æ\t" << t_title << endl;
+	cout << "ç¼–å·\t" << id << "\tå§“å\t" << name << "\tæ€§åˆ«\t" << sex << "\tå¹´é¾„\t" << age << "\tç³»éƒ¨\t" << t_dept << "\tä¸“ä¸š\t" << t_major << "\tèŒç§°\t" << t_title << endl;
 }
 
-//ÊµÑéÈËÔ±Àà
+//å®éªŒäººå‘˜ç±»
 class Experiment :public Person
 {
 public:
 	Experiment() {}
-	void Add();//Ìí¼Ó
-	void Seach();//²éÑ¯
-	void Show();//ÏÔÊ¾
-	void Edit();//±à¼­
-	void Delete();//É¾³ı
-	void Save();//±£´æ
-	void Read();//¶ÁÈ¡
-	void Seachid();//±àºÅ²éÑ¯
-	void Seachname();//ĞÕÃû²éÑ¯
+	void Add();//æ·»åŠ 
+	void Seach();//æŸ¥è¯¢
+	void Show();//æ˜¾ç¤º
+	void Edit();//ç¼–è¾‘
+	void Delete();//åˆ é™¤
+	void Save();//ä¿å­˜
+	void Read();//è¯»å–
+	void Seachid();//ç¼–å·æŸ¥è¯¢
+	void Seachname();//å§“åæŸ¥è¯¢
 	void Showone();
 private:
-	char e_location[20];//ËùÔÚÊµÑéÊÒ
-	char e_job[10];//Ö°Îñ
+	char e_location[20];//æ‰€åœ¨å®éªŒå®¤
+	char e_job[10];//èŒåŠ¡
 }; Experiment Exper[MAX]; int Expertop = 0;
 
 void Experiment::Add()
 {
-	Experiment e_temp;//ÁÙÊ±±äÁ¿
+	Experiment e_temp;//ä¸´æ—¶å˜é‡
 	if (Expertop < MAX)
 	{
-		cout << "±àºÅ:"; cin >> e_temp.id;
+		cout << "ç¼–å·:"; cin >> e_temp.id;
 		for (int i = 0; i < Expertop; i++)
 		{
 			if (!strcmp(Exper[i].id, e_temp.id))
 			{
-				cout << "idÒÑ´æÔÚ" << endl;
+				cout << "idå·²å­˜åœ¨" << endl;
 				return;
 			}
 		}
-		cout << "ĞÕÃû:"; cin >> e_temp.name;
-		cout << "ĞÔ±ğ:"; cin >> e_temp.sex;
-		cout << "ÄêÁä:"; cin >> e_temp.age;
-		cout << "ÊµÑéÊÒ:"; cin >> e_temp.e_location;
-		cout << "Ö°Îñ:"; cin >> e_temp.e_job;
+		cout << "å§“å:"; cin >> e_temp.name;
+		cout << "æ€§åˆ«:"; cin >> e_temp.sex;
+		cout << "å¹´é¾„:"; cin >> e_temp.age;
+		cout << "å®éªŒå®¤:"; cin >> e_temp.e_location;
+		cout << "èŒåŠ¡:"; cin >> e_temp.e_job;
 		Exper[Expertop] = e_temp;
 		Expertop++;
 	}
 	else
 	{
-		cout << "µ±Ç°ÊµÑéÈËÔ±ÒÑÕĞÂú" << endl;
+		cout << "å½“å‰å®éªŒäººå‘˜å·²æ‹›æ»¡" << endl;
 	}
 }
 void Experiment::Seach()
@@ -388,13 +388,13 @@ void Experiment::Seach()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ÊµÑéÈËÔ±¹ÜÀíÆ½Ì¨-²éÑ¯       |" << endl;
-		cout << "  |   1.±àºÅ²éÑ¯                 |" << endl;
-		cout << "  |   2.ĞÕÃû²éÑ¯                 |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  å®éªŒäººå‘˜ç®¡ç†å¹³å°-æŸ¥è¯¢       |" << endl;
+		cout << "  |   1.ç¼–å·æŸ¥è¯¢                 |" << endl;
+		cout << "  |   2.å§“åæŸ¥è¯¢                 |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -407,7 +407,7 @@ void Experiment::Seach()
 			return;
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 	}
@@ -416,7 +416,7 @@ void Experiment::Show()
 {
 	if (Expertop == 0)
 	{
-		cout << "µ±Ç°ÊµÑéÈËÔ±ÏµÍ³ÄÚÎª¿Õ" << endl;
+		cout << "å½“å‰å®éªŒäººå‘˜ç³»ç»Ÿå†…ä¸ºç©º" << endl;
 	}
 	else
 	{
@@ -433,33 +433,33 @@ void Experiment::Edit()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ÊµÑéÈËÔ±¹ÜÀíÆ½Ì¨-±à¼­       |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  å®éªŒäººå‘˜ç®¡ç†å¹³å°-ç¼–è¾‘       |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < Expertop; i++)
 			{
 				if (!strcmp(Exper[i].id, sid))
 					break;
 			}
 			if (i == Expertop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> e_temp.id;
-				cout << "ĞÕÃû:"; cin >> e_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> e_temp.sex;
-				cout << "ÄêÁä:"; cin >> e_temp.age;
-				cout << "ÊµÑéÊÒ:"; cin >> e_temp.e_location;
-				cout << "Ö°Îñ:"; cin >> e_temp.e_job;
+				cout << "ç¼–å·:"; cin >> e_temp.id;
+				cout << "å§“å:"; cin >> e_temp.name;
+				cout << "æ€§åˆ«:"; cin >> e_temp.sex;
+				cout << "å¹´é¾„:"; cin >> e_temp.age;
+				cout << "å®éªŒå®¤:"; cin >> e_temp.e_location;
+				cout << "èŒåŠ¡:"; cin >> e_temp.e_job;
 				Exper[i] = e_temp;
 			}
 			break;
@@ -468,22 +468,22 @@ void Experiment::Edit()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < Expertop; i++)
 			{
 				if (!strcmp(Exper[i].name, sname))
 					break;
 			}
 			if (i == Expertop)
-				cout << "ÊäÈëĞÕÃûÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥å§“åæ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> e_temp.id;
-				cout << "ĞÕÃû:"; cin >> e_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> e_temp.sex;
-				cout << "ÄêÁä:"; cin >> e_temp.age;
-				cout << "ÊµÑéÊÒ:"; cin >> e_temp.e_location;
-				cout << "Ö°Îñ:"; cin >> e_temp.e_job;
+				cout << "ç¼–å·:"; cin >> e_temp.id;
+				cout << "å§“å:"; cin >> e_temp.name;
+				cout << "æ€§åˆ«:"; cin >> e_temp.sex;
+				cout << "å¹´é¾„:"; cin >> e_temp.age;
+				cout << "å®éªŒå®¤:"; cin >> e_temp.e_location;
+				cout << "èŒåŠ¡:"; cin >> e_temp.e_job;
 				Exper[i] = e_temp;
 			}
 			break;
@@ -494,7 +494,7 @@ void Experiment::Edit()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -502,39 +502,39 @@ void Experiment::Delete()
 {
 	if (Expertop == 0)
 	{
-		cout << "µ±Ç°¼ÇÂ¼Îª¿Õ" << endl;
+		cout << "å½“å‰è®°å½•ä¸ºç©º" << endl;
 		return;
 	}
 	while (true)
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |   ÊµÑéÈËÔ±¹ÜÀíÆ½Ì¨-É¾³ı      |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |   å®éªŒäººå‘˜ç®¡ç†å¹³å°-åˆ é™¤      |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < Expertop; i++)
 			{
 				if (!strcmp(Exper[i].id, sid))
 					break;
 			}
 			if (i == Expertop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < Expertop; i++)
 				{
 					Exper[i] = Exper[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				Expertop--;
 			}
 			break;
@@ -543,21 +543,21 @@ void Experiment::Delete()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < Expertop; i++)
 			{
 				if (!strcmp(Exper[i].name, sname))
 					break;
 			}
 			if (i == Expertop)
-				cout << "ÊäÈëĞÕÃûÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥å§“åæ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < Expertop; i++)
 				{
 					Exper[i] = Exper[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				Expertop--;
 			}
 			break;
@@ -568,7 +568,7 @@ void Experiment::Delete()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -577,7 +577,7 @@ void Experiment::Save()
 {
 	int i;
 	ofstream outfile, outfile1;
-	outfile1.open("Expertop.dat", ios::out);	//Ğ´ÎÄ¼şExpertop.dat
+	outfile1.open("Expertop.dat", ios::out);	//å†™æ–‡ä»¶Expertop.dat
 	outfile1 << Expertop;
 	outfile.open("Exper_data.dat", ios::binary);
 	if (!outfile)
@@ -587,7 +587,7 @@ void Experiment::Save()
 	for (i = 0; i < Expertop; i++)
 		outfile.write((char *)&Exper[i], sizeof(Exper[i]));
 	outfile.close();
-	cout << "±£´æ³É¹¦£¡" << endl;
+	cout << "ä¿å­˜æˆåŠŸï¼" << endl;
 }
 void Experiment::Read()
 {
@@ -603,12 +603,12 @@ void Experiment::Read()
 	for (i = 0; i < Expertop; i++)
 		infile.read((char *)&Exper[i], sizeof(Exper[i]));
 	infile.close();
-	cout << "¶ÁÈ¡³É¹¦£¡" << endl;
+	cout << "è¯»å–æˆåŠŸï¼" << endl;
 }
 void Experiment::Seachid()
 {
 	char sid[10];
-	cout << "ÇëÊäÈë±àºÅ" << endl; cin >> sid;
+	cout << "è¯·è¾“å…¥ç¼–å·" << endl; cin >> sid;
 	int i;
 	for (i = 0; i < Expertop; i++)
 	{
@@ -620,13 +620,13 @@ void Experiment::Seachid()
 	}
 	if (i == Expertop)
 	{
-		cout << "¸Ã±àºÅ²»´æÔÚ" << endl;
+		cout << "è¯¥ç¼–å·ä¸å­˜åœ¨" << endl;
 	}
 }
 void Experiment::Seachname()
 {
 	char sname[5];
-	cout << "ÇëÊäÈëĞÕÃû" << endl; cin >> sname;
+	cout << "è¯·è¾“å…¥å§“å" << endl; cin >> sname;
 	int i;
 	for (i = 0; i < Expertop; i++)
 	{
@@ -638,59 +638,59 @@ void Experiment::Seachname()
 	}
 	if (i == Expertop)
 	{
-		cout << "¸ÃĞÕÃû²»´æÔÚ" << endl;
+		cout << "è¯¥å§“åä¸å­˜åœ¨" << endl;
 	}
 }
 void Experiment::Showone()
 {
-	cout << "±àºÅ\t" << id << "\tĞÕÃû\t" << name << "\tĞÔ±ğ\t" << sex << "\tÄêÁä\t" << age << "\tÊµÑéÊÒ\t" << e_location << "\tÖ°Îñ\t" << e_job << endl;
+	cout << "ç¼–å·\t" << id << "\tå§“å\t" << name << "\tæ€§åˆ«\t" << sex << "\tå¹´é¾„\t" << age << "\tå®éªŒå®¤\t" << e_location << "\tèŒåŠ¡\t" << e_job << endl;
 }
 
-//ĞĞÕşÈËÔ±Àà
+//è¡Œæ”¿äººå‘˜ç±»
 class Politician :virtual public Person
 {
-	friend class Tea_Po;//ÉùÃ÷ÓÑÔª£¬½ÌÊ¦¼æĞĞÕşÈËÔ±Àà·ÃÎÊĞĞÕşÈËÔ±Ë½ÓĞ±äÁ¿
+	friend class Tea_Po;//å£°æ˜å‹å…ƒï¼Œæ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç±»è®¿é—®è¡Œæ”¿äººå‘˜ç§æœ‰å˜é‡
 public:
-	void Add();//Ìí¼Ó
-	void Seach();//²éÑ¯
-	void Show();//ÏÔÊ¾
-	void Edit();//±à¼­
-	void Delete();//É¾³ı
-	void Save();//±£´æ
-	void Read();//¶ÁÈ¡
-	void Seachid();//±àºÅ²éÑ¯
-	void Seachname();//ĞÕÃû²éÑ¯
+	void Add();//æ·»åŠ 
+	void Seach();//æŸ¥è¯¢
+	void Show();//æ˜¾ç¤º
+	void Edit();//ç¼–è¾‘
+	void Delete();//åˆ é™¤
+	void Save();//ä¿å­˜
+	void Read();//è¯»å–
+	void Seachid();//ç¼–å·æŸ¥è¯¢
+	void Seachname();//å§“åæŸ¥è¯¢
 	void Showone();
 private:
-	char p_look[10];//ÕşÖÎÃæÃ²
-	char p_post[10];//Ö°³Æ
+	char p_look[10];//æ”¿æ²»é¢è²Œ
+	char p_post[10];//èŒç§°
 }; Politician Po[MAX]; int Potop = 0;
 
 void Politician::Add()
 {
-	Politician p_temp;//ÁÙÊ±±äÁ¿
+	Politician p_temp;//ä¸´æ—¶å˜é‡
 	if (Potop < MAX)
 	{
-		cout << "±àºÅ:"; cin >> p_temp.id;
+		cout << "ç¼–å·:"; cin >> p_temp.id;
 		for (int i = 0; i < Potop; i++)
 		{
 			if (!strcmp(Po[i].id, p_temp.id))
 			{
-				cout << "idÒÑ´æÔÚ" << endl;
+				cout << "idå·²å­˜åœ¨" << endl;
 				return;
 			}
 		}
-		cout << "ĞÕÃû:"; cin >> p_temp.name;
-		cout << "ĞÔ±ğ:"; cin >> p_temp.sex;
-		cout << "ÄêÁä:"; cin >> p_temp.age;
-		cout << "ÕşÖÎÃæÃ²:"; cin >> p_temp.p_look;
-		cout << "Ö°³Æ:"; cin >> p_temp.p_post;
+		cout << "å§“å:"; cin >> p_temp.name;
+		cout << "æ€§åˆ«:"; cin >> p_temp.sex;
+		cout << "å¹´é¾„:"; cin >> p_temp.age;
+		cout << "æ”¿æ²»é¢è²Œ:"; cin >> p_temp.p_look;
+		cout << "èŒç§°:"; cin >> p_temp.p_post;
 		Po[Potop] = p_temp;
 		Potop++;
 	}
 	else
 	{
-		cout << "µ±Ç°ĞĞÕşÈËÔ±ÒÑÕĞÂú" << endl;
+		cout << "å½“å‰è¡Œæ”¿äººå‘˜å·²æ‹›æ»¡" << endl;
 	}
 }
 void Politician::Seach()
@@ -699,13 +699,13 @@ void Politician::Seach()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨-²éÑ¯       |" << endl;
-		cout << "  |   1.±àºÅ²éÑ¯                 |" << endl;
-		cout << "  |   2.ĞÕÃû²éÑ¯                 |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°-æŸ¥è¯¢       |" << endl;
+		cout << "  |   1.ç¼–å·æŸ¥è¯¢                 |" << endl;
+		cout << "  |   2.å§“åæŸ¥è¯¢                 |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -718,7 +718,7 @@ void Politician::Seach()
 			return;
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 	}
@@ -727,7 +727,7 @@ void Politician::Show()
 {
 	if (Potop == 0)
 	{
-		cout << "µ±Ç°ĞĞÕşÈËÔ±ÏµÍ³ÄÚÎª¿Õ" << endl;
+		cout << "å½“å‰è¡Œæ”¿äººå‘˜ç³»ç»Ÿå†…ä¸ºç©º" << endl;
 	}
 	else
 	{
@@ -744,33 +744,33 @@ void Politician::Edit()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨-±à¼­       |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°-ç¼–è¾‘       |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < Potop; i++)
 			{
 				if (!strcmp(Po[i].id, sid))
 					break;
 			}
 			if (i == Potop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> p_temp.id;
-				cout << "ĞÕÃû:"; cin >> p_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> p_temp.sex;
-				cout << "ÄêÁä:"; cin >> p_temp.age;
-				cout << "ÕşÖÎÃæÃ²:"; cin >> p_temp.p_look;
-				cout << "Ö°³Æ:"; cin >> p_temp.p_post;
+				cout << "ç¼–å·:"; cin >> p_temp.id;
+				cout << "å§“å:"; cin >> p_temp.name;
+				cout << "æ€§åˆ«:"; cin >> p_temp.sex;
+				cout << "å¹´é¾„:"; cin >> p_temp.age;
+				cout << "æ”¿æ²»é¢è²Œ:"; cin >> p_temp.p_look;
+				cout << "èŒç§°:"; cin >> p_temp.p_post;
 				Po[i] = p_temp;
 			}
 			break;
@@ -779,22 +779,22 @@ void Politician::Edit()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < Potop; i++)
 			{
 				if (!strcmp(Po[i].name, sname))
 					break;
 			}
 			if (i == Potop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> p_temp.id;
-				cout << "ĞÕÃû:"; cin >> p_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> p_temp.sex;
-				cout << "ÄêÁä:"; cin >> p_temp.age;
-				cout << "ÕşÖÎÃæÃ²:"; cin >> p_temp.p_look;
-				cout << "Ö°³Æ:"; cin >> p_temp.p_post;
+				cout << "ç¼–å·:"; cin >> p_temp.id;
+				cout << "å§“å:"; cin >> p_temp.name;
+				cout << "æ€§åˆ«:"; cin >> p_temp.sex;
+				cout << "å¹´é¾„:"; cin >> p_temp.age;
+				cout << "æ”¿æ²»é¢è²Œ:"; cin >> p_temp.p_look;
+				cout << "èŒç§°:"; cin >> p_temp.p_post;
 				Po[i] = p_temp;
 			}
 			break;
@@ -805,7 +805,7 @@ void Politician::Edit()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -813,39 +813,39 @@ void Politician::Delete()
 {
 	if (Potop == 0)
 	{
-		cout << "µ±Ç°¼ÇÂ¼Îª¿Õ" << endl;
+		cout << "å½“å‰è®°å½•ä¸ºç©º" << endl;
 		return;
 	}
 	while (true)
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |   ĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨-É¾³ı      |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |   è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°-åˆ é™¤      |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < Potop; i++)
 			{
 				if (!strcmp(Po[i].id, sid))
 					break;
 			}
 			if (i == Potop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < Potop; i++)
 				{
 					Po[i] = Po[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				Potop--;
 			}
 			break;
@@ -854,21 +854,21 @@ void Politician::Delete()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < Potop; i++)
 			{
 				if (!strcmp(Po[i].name, sname))
 					break;
 			}
 			if (i == Potop)
-				cout << "ÊäÈëĞÕÃûÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥å§“åæ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < Potop; i++)
 				{
 					Po[i] = Po[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				Potop--;
 			}
 			break;
@@ -879,7 +879,7 @@ void Politician::Delete()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -888,7 +888,7 @@ void Politician::Save()
 {
 	int i;
 	ofstream outfile, outfile1;
-	outfile1.open("Potop.dat", ios::out);	//Ğ´ÎÄ¼şPotop.dat
+	outfile1.open("Potop.dat", ios::out);	//å†™æ–‡ä»¶Potop.dat
 	outfile1 << Potop;
 	outfile.open("Po_data.dat", ios::binary);
 	if (!outfile)
@@ -898,7 +898,7 @@ void Politician::Save()
 	for (i = 0; i < Potop; i++)
 		outfile.write((char *)&Po[i], sizeof(Po[i]));
 	outfile.close();
-	cout << "±£´æ³É¹¦£¡" << endl;
+	cout << "ä¿å­˜æˆåŠŸï¼" << endl;
 }
 void Politician::Read()
 {
@@ -914,12 +914,12 @@ void Politician::Read()
 	for (i = 0; i < Potop; i++)
 		infile.read((char *)&Po[i], sizeof(Po[i]));
 	infile.close();
-	cout << "¶ÁÈ¡³É¹¦£¡" << endl;
+	cout << "è¯»å–æˆåŠŸï¼" << endl;
 }
 void Politician::Seachid()
 {
 	char sid[10];
-	cout << "ÇëÊäÈë±àºÅ" << endl; cin >> sid;
+	cout << "è¯·è¾“å…¥ç¼–å·" << endl; cin >> sid;
 	int i;
 	for (i = 0; i < Potop; i++)
 	{
@@ -931,13 +931,13 @@ void Politician::Seachid()
 	}
 	if (i == Potop)
 	{
-		cout << "¸Ã±àºÅ²»´æÔÚ" << endl;
+		cout << "è¯¥ç¼–å·ä¸å­˜åœ¨" << endl;
 	}
 }
 void Politician::Seachname()
 {
 	char sname[5];
-	cout << "ÇëÊäÈëĞÕÃû" << endl; cin >> sname;
+	cout << "è¯·è¾“å…¥å§“å" << endl; cin >> sname;
 	int i;
 	for (i = 0; i < Potop; i++)
 	{
@@ -949,59 +949,59 @@ void Politician::Seachname()
 	}
 	if (i == Potop)
 	{
-		cout << "¸ÃĞÕÃû²»´æÔÚ" << endl;
+		cout << "è¯¥å§“åä¸å­˜åœ¨" << endl;
 	}
 }
 void Politician::Showone()
 {
-	cout << "±àºÅ\t" << id << "\tĞÕÃû\t" << name << "\tĞÔ±ğ\t" << sex << "\tÄêÁä\t" << age << "\tÕşÖÎÃæÃ²\t" << p_look << "\tÖ°³Æ\t" << p_post << endl;
+	cout << "ç¼–å·\t" << id << "\tå§“å\t" << name << "\tæ€§åˆ«\t" << sex << "\tå¹´é¾„\t" << age << "\tæ”¿æ²»é¢è²Œ\t" << p_look << "\tèŒç§°\t" << p_post << endl;
 }
 
 
-//½ÌÊ¦¼æĞĞÕşÈËÔ±Àà
+//æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç±»
 class Tea_Po :public Teacher, Politician
 {
 public:
-	void Add();//Ìí¼Ó
-	void Seach();//²éÑ¯
-	void Show();//ÏÔÊ¾
-	void Edit();//±à¼­
-	void Delete();//É¾³ı,µ÷ÓÃ
-	void Save();//±£´æ
-	void Read();//¶ÁÈ¡
-	void Seachid();//±àºÅ²éÑ¯
-	void Seachname();//ĞÕÃû²éÑ¯
+	void Add();//æ·»åŠ 
+	void Seach();//æŸ¥è¯¢
+	void Show();//æ˜¾ç¤º
+	void Edit();//ç¼–è¾‘
+	void Delete();//åˆ é™¤,è°ƒç”¨
+	void Save();//ä¿å­˜
+	void Read();//è¯»å–
+	void Seachid();//ç¼–å·æŸ¥è¯¢
+	void Seachname();//å§“åæŸ¥è¯¢
 	void Showone();
 }; Tea_Po T_P[MAX]; int T_Ptop = 0;
 
 
 void Tea_Po::Add()
 {
-	Tea_Po tp_temp;//ÁÙÊ±±äÁ¿
+	Tea_Po tp_temp;//ä¸´æ—¶å˜é‡
 	if (T_Ptop < MAX)
 	{
-		cout << "±àºÅ:"; cin >> tp_temp.id;
+		cout << "ç¼–å·:"; cin >> tp_temp.id;
 		for (int i = 0; i < T_Ptop; i++)
 		{
 			if (!strcmp(T_P[i].id, tp_temp.id))
 			{
-				cout << "idÒÑ´æÔÚ" << endl;
+				cout << "idå·²å­˜åœ¨" << endl;
 				return;
 			}
 		}
-		cout << "ĞÕÃû:"; cin >> tp_temp.name;
-		cout << "ĞÔ±ğ:"; cin >> tp_temp.sex;
-		cout << "ÄêÁä:"; cin >> tp_temp.age;
-		cout << "Ïµ²¿:"; cin >> tp_temp.t_dept;
-		cout << "×¨Òµ:"; cin >> tp_temp.t_major;
-		cout << "ÕşÖÎÃæÃ²:"; cin >> tp_temp.p_look;
-		cout << "Ö°³Æ:"; cin >> tp_temp.p_post;
+		cout << "å§“å:"; cin >> tp_temp.name;
+		cout << "æ€§åˆ«:"; cin >> tp_temp.sex;
+		cout << "å¹´é¾„:"; cin >> tp_temp.age;
+		cout << "ç³»éƒ¨:"; cin >> tp_temp.t_dept;
+		cout << "ä¸“ä¸š:"; cin >> tp_temp.t_major;
+		cout << "æ”¿æ²»é¢è²Œ:"; cin >> tp_temp.p_look;
+		cout << "èŒç§°:"; cin >> tp_temp.p_post;
 		T_P[T_Ptop] = tp_temp;
 		T_Ptop++;
 	}
 	else
 	{
-		cout << "µ±Ç°½ÌÊ¦¼æĞĞÕşÈËÔ±ÒÑÕĞÂú" << endl;
+		cout << "å½“å‰æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜å·²æ‹›æ»¡" << endl;
 	}
 }
 void Tea_Po::Seach()
@@ -1010,13 +1010,13 @@ void Tea_Po::Seach()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ½ÌÊ¦¼æĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨-²éÑ¯       |" << endl;
-		cout << "  |   1.±àºÅ²éÑ¯                 |" << endl;
-		cout << "  |   2.ĞÕÃû²éÑ¯                 |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°-æŸ¥è¯¢       |" << endl;
+		cout << "  |   1.ç¼–å·æŸ¥è¯¢                 |" << endl;
+		cout << "  |   2.å§“åæŸ¥è¯¢                 |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -1029,7 +1029,7 @@ void Tea_Po::Seach()
 			return;
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 	}
@@ -1038,7 +1038,7 @@ void Tea_Po::Show()
 {
 	if (T_Ptop == 0)
 	{
-		cout << "µ±Ç°½ÌÊ¦¼æĞĞÕşÈËÔ±ÏµÍ³ÄÚÎª¿Õ" << endl;
+		cout << "å½“å‰æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç³»ç»Ÿå†…ä¸ºç©º" << endl;
 	}
 	else
 	{
@@ -1055,35 +1055,35 @@ void Tea_Po::Edit()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ½ÌÊ¦¼æĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨-±à¼­       |" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢ĞŞ¸Ä       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°-ç¼–è¾‘       |" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶ä¿®æ”¹       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < T_Ptop; i++)
 			{
 				if (!strcmp(T_P[i].id, sid))
 					break;
 			}
 			if (i == T_Ptop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> tp_temp.id;
-				cout << "ĞÕÃû:"; cin >> tp_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> tp_temp.sex;
-				cout << "ÄêÁä:"; cin >> tp_temp.age;
-				cout << "Ïµ²¿:"; cin >> tp_temp.t_dept;
-				cout << "×¨Òµ"; cin >> tp_temp.t_major;
-				cout << "ÕşÖÎÃæÃ²:"; cin >> tp_temp.p_look;
-				cout << "Ö°³Æ:"; cin >> tp_temp.p_post;
+				cout << "ç¼–å·:"; cin >> tp_temp.id;
+				cout << "å§“å:"; cin >> tp_temp.name;
+				cout << "æ€§åˆ«:"; cin >> tp_temp.sex;
+				cout << "å¹´é¾„:"; cin >> tp_temp.age;
+				cout << "ç³»éƒ¨:"; cin >> tp_temp.t_dept;
+				cout << "ä¸“ä¸š"; cin >> tp_temp.t_major;
+				cout << "æ”¿æ²»é¢è²Œ:"; cin >> tp_temp.p_look;
+				cout << "èŒç§°:"; cin >> tp_temp.p_post;
 				T_P[i] = tp_temp;
 			}
 			break;
@@ -1092,24 +1092,24 @@ void Tea_Po::Edit()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < T_Ptop; i++)
 			{
 				if (!strcmp(T_P[i].name, sname))
 					break;
 			}
 			if (i == T_Ptop)
-				cout << "ÊäÈëĞÕÃûÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥å§“åæ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
-				cout << "±àºÅ:"; cin >> tp_temp.id;
-				cout << "ĞÕÃû:"; cin >> tp_temp.name;
-				cout << "ĞÔ±ğ:"; cin >> tp_temp.sex;
-				cout << "ÄêÁä:"; cin >> tp_temp.age;
-				cout << "Ïµ²¿:"; cin >> tp_temp.t_dept;
-				cout << "×¨Òµ"; cin >> tp_temp.t_major;
-				cout << "ÕşÖÎÃæÃ²:"; cin >> tp_temp.p_look;
-				cout << "Ö°³Æ:"; cin >> tp_temp.p_post;
+				cout << "ç¼–å·:"; cin >> tp_temp.id;
+				cout << "å§“å:"; cin >> tp_temp.name;
+				cout << "æ€§åˆ«:"; cin >> tp_temp.sex;
+				cout << "å¹´é¾„:"; cin >> tp_temp.age;
+				cout << "ç³»éƒ¨:"; cin >> tp_temp.t_dept;
+				cout << "ä¸“ä¸š"; cin >> tp_temp.t_major;
+				cout << "æ”¿æ²»é¢è²Œ:"; cin >> tp_temp.p_look;
+				cout << "èŒç§°:"; cin >> tp_temp.p_post;
 				T_P[i] = tp_temp;
 			}
 			break;
@@ -1120,7 +1120,7 @@ void Tea_Po::Edit()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -1128,39 +1128,39 @@ void Tea_Po::Delete()
 {
 	if (T_Ptop == 0)
 	{
-		cout << "µ±Ç°¼ÇÂ¼Îª¿Õ" << endl;
+		cout << "å½“å‰è®°å½•ä¸ºç©º" << endl;
 		return;
 	}
 	while (true)
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |   ½ÌÊ¦¼æĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨-É¾³ı|" << endl;
-		cout << "  |   1.¸ù¾İ±àºÅ²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   2.¸ù¾İĞÕÃû²éÑ¯²¢É¾³ı       |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |   æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°-åˆ é™¤|" << endl;
+		cout << "  |   1.æ ¹æ®ç¼–å·æŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   2.æ ¹æ®å§“åæŸ¥è¯¢å¹¶åˆ é™¤       |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		if (c == 1)
 		{
 			char sid[10];
 			int i;
-			cout << "ÇëÊäÈë±àºÅ"; cin >> sid;
+			cout << "è¯·è¾“å…¥ç¼–å·"; cin >> sid;
 			for (i = 0; i < T_Ptop; i++)
 			{
 				if (!strcmp(T_P[i].id, sid))
 					break;
 			}
 			if (i == T_Ptop)
-				cout << "ÊäÈë±àºÅÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥ç¼–å·æ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < T_Ptop; i++)
 				{
 					T_P[i] = T_P[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				T_Ptop--;
 			}
 			break;
@@ -1169,21 +1169,21 @@ void Tea_Po::Delete()
 		{
 			char sname[5];
 			int i;
-			cout << "ÇëÊäÈëĞÕÃû"; cin >> sname;
+			cout << "è¯·è¾“å…¥å§“å"; cin >> sname;
 			for (i = 0; i < T_Ptop; i++)
 			{
 				if (!strcmp(T_P[i].name, sname))
 					break;
 			}
 			if (i == T_Ptop)
-				cout << "ÊäÈëĞÕÃûÎŞĞ§£¬ÏµÍ³ÄÚ²»´æÔÚ" << endl;
+				cout << "è¾“å…¥å§“åæ— æ•ˆï¼Œç³»ç»Ÿå†…ä¸å­˜åœ¨" << endl;
 			else
 			{
 				for (i; i < T_Ptop; i++)
 				{
 					T_P[i] = T_P[i + 1];
 				}
-				cout << "É¾³ı³É¹¦" << endl;
+				cout << "åˆ é™¤æˆåŠŸ" << endl;
 				T_Ptop--;
 			}
 			break;
@@ -1194,7 +1194,7 @@ void Tea_Po::Delete()
 		}
 		else
 		{
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÑ¡Ôñ" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°é€‰æ‹©" << endl;
 		}
 	}
 }
@@ -1203,7 +1203,7 @@ void Tea_Po::Save()
 {
 	int i;
 	ofstream outfile, outfile1;
-	outfile1.open("T_Ptop.dat", ios::out);	//Ğ´ÎÄ¼şT_Ptop.dat
+	outfile1.open("T_Ptop.dat", ios::out);	//å†™æ–‡ä»¶T_Ptop.dat
 	outfile1 << T_Ptop;
 	outfile.open("T_P_data.dat", ios::binary);
 	if (!outfile)
@@ -1213,7 +1213,7 @@ void Tea_Po::Save()
 	for (i = 0; i < T_Ptop; i++)
 		outfile.write((char *)&T_P[i], sizeof(T_P[i]));
 	outfile.close();
-	cout << "±£´æ³É¹¦£¡" << endl;
+	cout << "ä¿å­˜æˆåŠŸï¼" << endl;
 }
 void Tea_Po::Read()
 {
@@ -1229,12 +1229,12 @@ void Tea_Po::Read()
 	for (i = 0; i < T_Ptop; i++)
 		infile.read((char *)&T_P[i], sizeof(T_P[i]));
 	infile.close();
-	cout << "¶ÁÈ¡³É¹¦£¡" << endl;
+	cout << "è¯»å–æˆåŠŸï¼" << endl;
 }
 void Tea_Po::Seachid()
 {
 	char sid[10];
-	cout << "ÇëÊäÈë±àºÅ" << endl; cin >> sid;
+	cout << "è¯·è¾“å…¥ç¼–å·" << endl; cin >> sid;
 	int i;
 	for (i = 0; i < T_Ptop; i++)
 	{
@@ -1246,13 +1246,13 @@ void Tea_Po::Seachid()
 	}
 	if (i == T_Ptop)
 	{
-		cout << "¸Ã±àºÅ²»´æÔÚ" << endl;
+		cout << "è¯¥ç¼–å·ä¸å­˜åœ¨" << endl;
 	}
 }
 void Tea_Po::Seachname()
 {
 	char sname[5];
-	cout << "ÇëÊäÈëĞÕÃû" << endl; cin >> sname;
+	cout << "è¯·è¾“å…¥å§“å" << endl; cin >> sname;
 	int i;
 	for (i = 0; i < T_Ptop; i++)
 	{
@@ -1264,43 +1264,43 @@ void Tea_Po::Seachname()
 	}
 	if (i == T_Ptop)
 	{
-		cout << "¸ÃĞÕÃû²»´æÔÚ" << endl;
+		cout << "è¯¥å§“åä¸å­˜åœ¨" << endl;
 	}
 }
 void Tea_Po::Showone()
 {
-	cout << "±àºÅ\t" << id << "\tĞÕÃû\t" << name << "\tĞÔ±ğ\t" << sex << "\tÄêÁä\t" << age << "\tÏµ²¿\t" << t_dept << "\t×¨Òµ" << t_major << "\tÕşÖÎÃæÃ²\t" << p_look << "\tÖ°³Æ\t" << p_look << endl;
+	cout << "ç¼–å·\t" << id << "\tå§“å\t" << name << "\tæ€§åˆ«\t" << sex << "\tå¹´é¾„\t" << age << "\tç³»éƒ¨\t" << t_dept << "\tä¸“ä¸š" << t_major << "\tæ”¿æ²»é¢è²Œ\t" << p_look << "\tèŒç§°\t" << p_look << endl;
 }
 
-/*·Ö±ğÉè¼ÆËÄÀàÈËÔ±µÄ²Ëµ¥
-½ÌÊ¦²Ëµ¥	void Tea_menu(Teacher tea)
-ÊµÑéÈËÔ±²Ëµ¥void Exper_menu(Experiment exper)
-ĞĞÕşÈËÔ±²Ëµ¥void P_menu(Politician po)
-ÀÏÊ¦¼æĞĞÕşÈËÔ±²Ëµ¥void TeaPo_menu(Tea_Po t_p)
+/*åˆ†åˆ«è®¾è®¡å››ç±»äººå‘˜çš„èœå•
+æ•™å¸ˆèœå•	void Tea_menu(Teacher tea)
+å®éªŒäººå‘˜èœå•void Exper_menu(Experiment exper)
+è¡Œæ”¿äººå‘˜èœå•void P_menu(Politician po)
+è€å¸ˆå…¼è¡Œæ”¿äººå‘˜èœå•void TeaPo_menu(Tea_Po t_p)
 */
 
-//½ÌÊ¦²Ëµ¥
+//æ•™å¸ˆèœå•
 void Tea_menu(Teacher tea)
 {
 	while (true)
 	{
 		system("pause");
-		system("cls");//Çå³ıÖ÷²Ëµ¥
+		system("cls");//æ¸…é™¤ä¸»èœå•
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ½ÌÊ¦¹ÜÀíÆ½Ì¨            |" << endl;
-		cout << "  |   1.Ìí¼Ó                     |" << endl;
-		cout << "  |   2.²éÑ¯                     |" << endl;
-		cout << "  |   3.ÏÔÊ¾                     |" << endl;
-		cout << "  |   4.±à¼­                     |" << endl;
-		cout << "  |   5.É¾³ı                     |" << endl;
-		cout << "  |   6.Í³¼Æ                     |" << endl;
-		cout << "  |   7.±£´æ                     |" << endl;
-		cout << "  |   8.¶ÁÈ¡                     |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      æ•™å¸ˆç®¡ç†å¹³å°            |" << endl;
+		cout << "  |   1.æ·»åŠ                      |" << endl;
+		cout << "  |   2.æŸ¥è¯¢                     |" << endl;
+		cout << "  |   3.æ˜¾ç¤º                     |" << endl;
+		cout << "  |   4.ç¼–è¾‘                     |" << endl;
+		cout << "  |   5.åˆ é™¤                     |" << endl;
+		cout << "  |   6.ç»Ÿè®¡                     |" << endl;
+		cout << "  |   7.ä¿å­˜                     |" << endl;
+		cout << "  |   8.è¯»å–                     |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -1330,7 +1330,7 @@ void Tea_menu(Teacher tea)
 		case 0:
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 		if (c == 0)
@@ -1338,28 +1338,28 @@ void Tea_menu(Teacher tea)
 	}
 }
 
-//ÊµÑéÈËÔ±²Ëµ¥
+//å®éªŒäººå‘˜èœå•
 void Exper_menu(Experiment exper)
 {
 	while (true)
 	{
 		system("pause");
-		system("cls");//Çå³ıÖ÷²Ëµ¥
+		system("cls");//æ¸…é™¤ä¸»èœå•
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ÊµÑéÈËÔ±¹ÜÀíÆ½Ì¨        |" << endl;
-		cout << "  |   1.Ìí¼Ó                     |" << endl;
-		cout << "  |   2.²éÑ¯                     |" << endl;
-		cout << "  |   3.ÏÔÊ¾                     |" << endl;
-		cout << "  |   4.±à¼­                     |" << endl;
-		cout << "  |   5.É¾³ı                     |" << endl;
-		cout << "  |   6.Í³¼Æ                     |" << endl;
-		cout << "  |   7.±£´æ                     |" << endl;
-		cout << "  |   8.¶ÁÈ¡                     |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      å®éªŒäººå‘˜ç®¡ç†å¹³å°        |" << endl;
+		cout << "  |   1.æ·»åŠ                      |" << endl;
+		cout << "  |   2.æŸ¥è¯¢                     |" << endl;
+		cout << "  |   3.æ˜¾ç¤º                     |" << endl;
+		cout << "  |   4.ç¼–è¾‘                     |" << endl;
+		cout << "  |   5.åˆ é™¤                     |" << endl;
+		cout << "  |   6.ç»Ÿè®¡                     |" << endl;
+		cout << "  |   7.ä¿å­˜                     |" << endl;
+		cout << "  |   8.è¯»å–                     |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -1389,7 +1389,7 @@ void Exper_menu(Experiment exper)
 		case 0:
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 		if (c == 0)
@@ -1397,28 +1397,28 @@ void Exper_menu(Experiment exper)
 	}
 }
 
-//ĞĞÕşÈËÔ±Àà²Ëµ¥
+//è¡Œæ”¿äººå‘˜ç±»èœå•
 void P_menu(Politician po)
 {
 	while (true)
 	{
 		system("pause");
-		system("cls");//Çå³ıÖ÷²Ëµ¥
+		system("cls");//æ¸…é™¤ä¸»èœå•
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ĞĞÕşÈËÔ±¹ÜÀíÆ½Ì¨        |" << endl;
-		cout << "  |   1.Ìí¼Ó                     |" << endl;
-		cout << "  |   2.²éÑ¯                     |" << endl;
-		cout << "  |   3.ÏÔÊ¾                     |" << endl;
-		cout << "  |   4.±à¼­                     |" << endl;
-		cout << "  |   5.É¾³ı                     |" << endl;
-		cout << "  |   6.Í³¼Æ                     |" << endl;
-		cout << "  |   7.±£´æ                     |" << endl;
-		cout << "  |   8.¶ÁÈ¡                     |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      è¡Œæ”¿äººå‘˜ç®¡ç†å¹³å°        |" << endl;
+		cout << "  |   1.æ·»åŠ                      |" << endl;
+		cout << "  |   2.æŸ¥è¯¢                     |" << endl;
+		cout << "  |   3.æ˜¾ç¤º                     |" << endl;
+		cout << "  |   4.ç¼–è¾‘                     |" << endl;
+		cout << "  |   5.åˆ é™¤                     |" << endl;
+		cout << "  |   6.ç»Ÿè®¡                     |" << endl;
+		cout << "  |   7.ä¿å­˜                     |" << endl;
+		cout << "  |   8.è¯»å–                     |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -1448,7 +1448,7 @@ void P_menu(Politician po)
 		case 0:
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 		if (c == 0)
@@ -1457,28 +1457,28 @@ void P_menu(Politician po)
 }
 
 
-//½ÌÊ¦¼æĞĞÕşÈËÔ±²Ëµ¥
+//æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜èœå•
 void TeaPo_menu(Tea_Po t_p)
 {
 	while (true)
 	{
 		system("pause");
-		system("cls");//Çå³ıÖ÷²Ëµ¥
+		system("cls");//æ¸…é™¤ä¸»èœå•
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |  ½ÌÊ¦¼æĞĞÕşÈËÔ±ÈËÔ±¹ÜÀíÆ½Ì¨  |" << endl;
-		cout << "  |   1.Ìí¼Ó                     |" << endl;
-		cout << "  |   2.²éÑ¯                     |" << endl;
-		cout << "  |   3.ÏÔÊ¾                     |" << endl;
-		cout << "  |   4.±à¼­                     |" << endl;
-		cout << "  |   5.É¾³ı                     |" << endl;
-		cout << "  |   6.Í³¼Æ                     |" << endl;
-		cout << "  |   7.±£´æ                     |" << endl;
-		cout << "  |   8.¶ÁÈ¡                     |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |  æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜äººå‘˜ç®¡ç†å¹³å°  |" << endl;
+		cout << "  |   1.æ·»åŠ                      |" << endl;
+		cout << "  |   2.æŸ¥è¯¢                     |" << endl;
+		cout << "  |   3.æ˜¾ç¤º                     |" << endl;
+		cout << "  |   4.ç¼–è¾‘                     |" << endl;
+		cout << "  |   5.åˆ é™¤                     |" << endl;
+		cout << "  |   6.ç»Ÿè®¡                     |" << endl;
+		cout << "  |   7.ä¿å­˜                     |" << endl;
+		cout << "  |   8.è¯»å–                     |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -1508,7 +1508,7 @@ void TeaPo_menu(Tea_Po t_p)
 		case 0:
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 		if (c == 0)
@@ -1524,15 +1524,15 @@ void Statistics()
 	{
 		int c;
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ÈËÊıÍ³¼Æ                |" << endl;
-		cout << "  |   1.ËÄÀàÈËÔ±ÊıÁ¿             |" << endl;
-		cout << "  |   2.ÄĞÔ±¹¤ÊıÁ¿               |" << endl;
-		cout << "  |   3.Å®Ô±¹¤ÊıÁ¿               |" << endl;
-		cout << "  |   4.Ä³ÄêÁä¶ÎÊıÁ¿             |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      äººæ•°ç»Ÿè®¡                |" << endl;
+		cout << "  |   1.å››ç±»äººå‘˜æ•°é‡             |" << endl;
+		cout << "  |   2.ç”·å‘˜å·¥æ•°é‡               |" << endl;
+		cout << "  |   3.å¥³å‘˜å·¥æ•°é‡               |" << endl;
+		cout << "  |   4.æŸå¹´é¾„æ®µæ•°é‡             |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ"; cin >> c;
+		cout << "è¯·é€‰æ‹©"; cin >> c;
 		switch (c)
 		{
 		case 1:
@@ -1551,78 +1551,78 @@ void Statistics()
 			return;
 			break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			break;
 		}
 	}
 }
-//ËÄÀàÔ±¹¤ÊıÁ¿
+//å››ç±»å‘˜å·¥æ•°é‡
 void Statisticstotal()
 {
-	cout << "ËÄÀàÔ±¹¤×ÜÊıÁ¿" << Teatop + Expertop + Potop + T_Ptop << endl;
-	cout << "½ÌÊ¦×ÜÊıÁ¿" << Teatop << endl;
-	cout << "ÊµÑéÔ±×ÜÊıÁ¿" << Expertop << endl;
-	cout << "ĞĞÕşÈËÔ±×ÜÊıÁ¿" << Potop << endl;
-	cout << "½ÌÊ¦¼æĞĞÕşÈËÔ±×ÜÊıÁ¿" << T_Ptop << endl;
+	cout << "å››ç±»å‘˜å·¥æ€»æ•°é‡" << Teatop + Expertop + Potop + T_Ptop << endl;
+	cout << "æ•™å¸ˆæ€»æ•°é‡" << Teatop << endl;
+	cout << "å®éªŒå‘˜æ€»æ•°é‡" << Expertop << endl;
+	cout << "è¡Œæ”¿äººå‘˜æ€»æ•°é‡" << Potop << endl;
+	cout << "æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜æ€»æ•°é‡" << T_Ptop << endl;
 }
-//ÄĞÔ±¹¤ÊıÁ¿
+//ç”·å‘˜å·¥æ•°é‡
 void Statisticman()
 {
 	int man = 0;
 	for (int i = 0; i < Teatop; i++)
 	{
-		if (!strcmp(Tea[i].sex, "ÄĞ"))
+		if (!strcmp(Tea[i].sex, "ç”·"))
 			man++;
 	}
 	for (int i = 0; i < Expertop; i++)
 	{
-		if (!strcmp(Exper[i].sex, "ÄĞ"))
+		if (!strcmp(Exper[i].sex, "ç”·"))
 			man++;
 	}
 	for (int i = 0; i < Potop; i++)
 	{
-		if (!strcmp(Po[i].sex, "ÄĞ"))
+		if (!strcmp(Po[i].sex, "ç”·"))
 			man++;
 	}
 	for (int i = 0; i < T_Ptop; i++)
 	{
-		if (!strcmp(T_P[i].sex, "ÄĞ"))
+		if (!strcmp(T_P[i].sex, "ç”·"))
 			man++;
 	}
-	cout << "ÄĞÔ±¹¤µÄÊıÁ¿Îª" << man << endl;
+	cout << "ç”·å‘˜å·¥çš„æ•°é‡ä¸º" << man << endl;
 }
-//Å®Ô±¹¤ÊıÁ¿
+//å¥³å‘˜å·¥æ•°é‡
 void Statisticwomen()
 {
 	int women = 0;
 	for (int i = 0; i < Teatop; i++)
 	{
-		if (!strcmp(Tea[i].sex, "Å®"))
+		if (!strcmp(Tea[i].sex, "å¥³"))
 			women++;
 	}
 	for (int i = 0; i < Expertop; i++)
 	{
-		if (!strcmp(Exper[i].sex, "Å®"))
+		if (!strcmp(Exper[i].sex, "å¥³"))
 			women++;
 	}
 	for (int i = 0; i < Potop; i++)
 	{
-		if (!strcmp(Po[i].sex, "Å®"))
+		if (!strcmp(Po[i].sex, "å¥³"))
 			women++;
 	}
 	for (int i = 0; i < T_Ptop; i++)
 	{
-		if (!strcmp(T_P[i].sex, "Å®"))
+		if (!strcmp(T_P[i].sex, "å¥³"))
 			women++;
 	}
-	cout << "Å®Ô±¹¤µÄÊıÁ¿Îª" << women << endl;
+	cout << "å¥³å‘˜å·¥çš„æ•°é‡ä¸º" << women << endl;
 }
-//ÄêÁä¶ÎÍ³¼Æ
+//å¹´é¾„æ®µç»Ÿè®¡
 void Statisticage()
 {
 	int age1, age2;
-	cout << "ÄêÁäÇø¼ä:age1="; cin >> age1;
-	cout << "ÄêÁäÇø¼ä:age2="; cin >> age2;
+	cout << "å¹´é¾„åŒºé—´:age1="; cin >> age1;
+	cout << "å¹´é¾„åŒºé—´:age2="; cin >> age2;
 	int num = 0;
 	for (int i = 0; i < Teatop; i++)
 	{
@@ -1644,40 +1644,46 @@ void Statisticage()
 		if (T_P[i].age > age1&&T_P[i].age < age2)
 			num++;
 	}
-	cout << age1 << "¡«" << age2 << "µÄÊıÁ¿Îª" << num << endl;
+	cout << age1 << "ï½" << age2 << "çš„æ•°é‡ä¸º" << num << endl;
 }
 int main()
 {
-	string password = "192062116";	//³õÊ¼ÃÜÂë
-	string inputpass;	//ÊäÈëÃÜÂë
-	int f = 3;			//ÊäÈë´ÎÊı
-	int c;		//Ö÷²Ëµ¥Ñ¡Ôñ
+	string password = "192062116";	//åˆå§‹å¯†ç 
+	string inputpass;	//è¾“å…¥å¯†ç 
+	int f = 3;			//è¾“å…¥æ¬¡æ•°
+	int c;		//ä¸»èœå•é€‰æ‹©
 
-	//¶¨ÒåËÄÀàÈËÔ±,µ÷ÓÃ²Ëµ¥
+	//å®šä¹‰å››ç±»äººå‘˜,è°ƒç”¨èœå•
 	Teacher mt;
 	Experiment me;
 	Politician mp;
 	Tea_Po mtp;
+	/*è¯»å–ç³»ç»Ÿå†…æ–‡ä»¶*/
+	mt.Read();
+	me.Read();
+	mp.Read();
+	mtp.Read();
+	system("cls");
 
 	cout << endl;
-	cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-	cout << "  |      ¸ßĞ£ÈËÔ±ĞÅÏ¢¹ÜÀíÏµÍ³    |" << endl;
+	cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+	cout << "  |      é«˜æ ¡äººå‘˜ä¿¡æ¯ç®¡ç†ç³»ç»Ÿ    |" << endl;
 	cout << "  |______________________________|" << endl << endl;
 
 	while (true)
 	{
-		cout << "ÇëÊäÈëÃÜÂë" << endl; cin >> inputpass;
+		cout << "è¯·è¾“å…¥å¯†ç (192062116)" << endl; cin >> inputpass;
 		if (inputpass == password)
 		{
-			cout << "ÃÜÂëÕıÈ·" << endl;
+			cout << "å¯†ç æ­£ç¡®" << endl;
 			break;
 		}
 		else
 		{
-			cout << "ÃÜÂë´íÎó" << endl;
+			cout << "å¯†ç é”™è¯¯" << endl;
 			if (f > 1)
 			{
-				cout << "Äã»¹ÓĞ" << f - 1 << "´Î»ú»á" << endl;
+				cout << "ä½ è¿˜æœ‰" << f - 1 << "æ¬¡æœºä¼š" << endl;
 				f--;
 			}
 			else
@@ -1689,15 +1695,15 @@ int main()
 	{
 		system("cls");
 		cout << endl;
-		cout << "  |£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş£ş|" << endl;
-		cout << "  |      ¸ßĞ£ÈËÔ±ĞÅÏ¢¹ÜÀíÏµÍ³    |" << endl;
-		cout << "  |   1.½ÌÊ¦¹ÜÀí                 |" << endl;
-		cout << "  |   2.ÊµÑéÔ±¹ÜÀí               |" << endl;
-		cout << "  |   3.ĞĞÕşÈËÔ±¹ÜÀí             |" << endl;
-		cout << "  |   4.½ÌÊ¦¼æĞĞÕşÈËÔ±¹ÜÀí¹ÜÀí   |" << endl;
-		cout << "  |   0.ÍË³ö                     |" << endl;
+		cout << "  |ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£ï¿£|" << endl;
+		cout << "  |      é«˜æ ¡äººå‘˜ä¿¡æ¯ç®¡ç†ç³»ç»Ÿ    |" << endl;
+		cout << "  |   1.æ•™å¸ˆç®¡ç†                 |" << endl;
+		cout << "  |   2.å®éªŒå‘˜ç®¡ç†               |" << endl;
+		cout << "  |   3.è¡Œæ”¿äººå‘˜ç®¡ç†             |" << endl;
+		cout << "  |   4.æ•™å¸ˆå…¼è¡Œæ”¿äººå‘˜ç®¡ç†ç®¡ç†   |" << endl;
+		cout << "  |   0.é€€å‡º                     |" << endl;
 		cout << "  |______________________________|" << endl << endl;
-		cout << "ÇëÑ¡Ôñ" << endl;
+		cout << "è¯·é€‰æ‹©" << endl;
 		cin >> c;
 		switch (c)
 		{
@@ -1715,7 +1721,7 @@ int main()
 			break;
 		case 0:break;
 		default:
-			cout << "ÊäÈë´íÎóÇëÖØĞÂÊäÈë" << endl;
+			cout << "è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥" << endl;
 			system("pause");
 			break;
 		}

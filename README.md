@@ -95,6 +95,8 @@
      * Experiment 12 Stone.max & .png & .pdf
      * Experiment 13 Basketball.max & .png & .pdf
      * Experiment 14 Plane.max & .png & .pdf
+     * Experiment 15 Box.max & .png & .pdf
+     * Experiment 16 Weapons.max & .png & .pdf
    * Task
      * 3.7 Chair.max & .png
      * 3.11 DNA.max & .png

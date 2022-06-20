@@ -129,6 +129,7 @@
      * Experiment 2 分支程序.asm & .pdf
      * Experiment 3 循环程序.asm & .pdf
      * Experiment 4 子程序及中断实验.asm & .pdf
+     * Experiment 5 基本IO操作温度控制实验.asm & .pdf
 * 🔄Compilation principle
    * Experient
      * Experiment 1 词法分析.cpp & .c & .pdf

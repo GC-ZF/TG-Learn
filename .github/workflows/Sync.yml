@@ -1,6 +1,6 @@
 name: Sync To Gitee
 
-on: [ push,commit ]
+on: [ push ]
 
 jobs:
   build:

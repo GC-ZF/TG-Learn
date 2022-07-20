@@ -11,6 +11,6 @@ jobs:
         with:
           src: github/GC-ZF
           dst: gitee/gc-zhang
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_key: ${{ secrets.GC_Zhang }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           static_list: "TG-Learn"

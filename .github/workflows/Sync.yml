@@ -1,0 +1,16 @@
+name: Sync To Gitee
+
+on: [ push,commit ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Black list
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/GC-ZF
+          dst: gitee/gc-zhang
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          static_list: "TG-Learn"

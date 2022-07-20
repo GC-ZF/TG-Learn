@@ -136,7 +136,7 @@
      * Experiment 2 递归下降分析.cpp & .pdf
      * Experiment 3 LL(1)分析法.cpp & .pdf
      * Experiment 4 逆波兰表示法.cpp & .pdf
-## 如何下载
+## 如何下载(Github)
 <h2>1.下载整个仓库</h2>
 
 有**Git软件**用`git clone [url]`。没有**Git软件**下载后自行解压</br>

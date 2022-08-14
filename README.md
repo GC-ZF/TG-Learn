@@ -21,7 +21,7 @@
 				<img src="https://img.shields.io/badge/找我-闲聊-0cedbe?style=flat&logo=Tencent QQ"
 					title="QQ">
 			</a>
-      <a style="margin-inline:5px" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+      			<a style="margin-inline:5px" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
 				<img  src="https://visitor-badge.glitch.me/badge?page_id=TG-Learn" title="访客"/>
 			</a>
 </p>

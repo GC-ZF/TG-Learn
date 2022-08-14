@@ -23,7 +23,7 @@
 					title="QQ">
 			</a>&emsp;
       			<a style="margin-inline:5px" target="_blank" href="">
-				<img  src="https://visitor-badge.glitch.me/badge?page_id=GC-ZF" title="访客"/>
+				<img  src="https://visitor-badge.glitch.me/badge?page_id=TG-Learn" title="访客"/>
 			</a>
 </p>
 

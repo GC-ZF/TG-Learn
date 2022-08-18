@@ -3,7 +3,7 @@
 <!-- 徽标 -->
 <p align="center">
 			<a style="margin-inline:5px" target="_blank" href="https://github.com/GC-ZF">
-				<img src="https://img.shields.io/badge/Github-Home-blue?style=flat&logo=GitHub"
+				<img src="https://img.shields.io/badge/Github-Hom-blue?style=flat&logo=GitHub"
 					title="Github主页">
 			</a>&emsp;
 			<a style="margin-inline:5px" target="_blank" href="https://gitee.com/gc-zhang">

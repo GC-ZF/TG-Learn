@@ -3,11 +3,11 @@
 <!-- 徽标 -->
 <p align="center">
 			<a style="margin-inline:5px" target="_blank" href="https://github.com/GC-ZF">
-				<img src="https://img.shields.io/badge/Github-Overview-blue?style=flat&logo=GitHub"
+				<img src="https://img.shields.io/badge/Github-Home-blue?style=flat&logo=GitHub"
 					title="Github主页">
 			</a>&emsp;
 			<a style="margin-inline:5px" target="_blank" href="https://gitee.com/gc-zhang">
-				<img src="https://img.shields.io/badge/Gitee-Overview-blue?style=flat&logo=Gitee" 
+				<img src="https://img.shields.io/badge/Gitee-Home-blue?style=flat&logo=Gitee" 
         title="Gitee主页">
 			</a>&emsp;
 			<a style="margin-inline:5px" target="_blank" href="https://blog.csdn.net/qq_49488584">

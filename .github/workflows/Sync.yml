@@ -1,7 +1,7 @@
 name: Sync To Gitee
 
 on: # 触发条件
-  [push]:
+  push:
     branches:
       - main # 推送到 main 分支
 

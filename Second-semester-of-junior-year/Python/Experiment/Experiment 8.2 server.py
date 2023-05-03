@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年06月15日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 import socket
 serverSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)	#创建套接字.

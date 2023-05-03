@@ -2,12 +2,12 @@
 @Author:张时贰
 @Date:2022年06月08日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 import pickle
 
 num = 1  # 数字
-string1 = "zhangshier.vip"  # 字符串
+string1 = "zhsher.vip"  # 字符串
 list1 = [ 1.25, 21.06, 0.3, 4.7, 58.1 ]  # 列表
 tuple1 = (1, 8, 27, 64, 125)  # 元组
 dict1 = dict ( name="Mary", height=165, weight=51 )  # 字典

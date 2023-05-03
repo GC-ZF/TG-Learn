@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年06月08日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 '''先运行服务端代码，然后运行客户端'''
 
@@ -10,7 +10,7 @@ import socket
 from os.path import commonprefix
 
 # 建立聊天回复字典
-words = {'What is your name': 'Zhangshier',
+words = {'What is your name': 'zhsher',
          'how are you?': 'Fine,thank you!',
          'how old are you?': '18 forever',
          'bye': 'Bye!'}

@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年06月10日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 '''https://blog.csdn.net/weixin_45168704/article/details/109820049'''
 # （1）定义一个实现算术运算的类Arithmetic_Operation，可以实现两个整数的加法、减法、乘法和除法运算。

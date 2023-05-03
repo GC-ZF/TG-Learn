@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年05月18日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 score = {'001': 96, '002': 98, '003': 92, '004': 93, '005': 94}
 print ( "最初的学生成绩为:", score )

@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年06月01日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 # 需要的库
 # pip install wordcloud

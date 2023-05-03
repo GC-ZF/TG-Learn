@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年06月01日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 # 可以输出结果即可，红色报错是库的问题
 import matplotlib.pyplot as plt

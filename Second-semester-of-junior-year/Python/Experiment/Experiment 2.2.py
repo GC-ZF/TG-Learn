@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年05月18日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 set1 = {2, 5, 9, 1, 3}
 set2 = {3, 6, 8, 2, 5}

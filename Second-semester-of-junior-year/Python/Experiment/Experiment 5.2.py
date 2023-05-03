@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年06月01日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 import numpy as np
 a= np.random.randint(1,100,(3,4))    #1~100 三行四列数组

@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年05月28日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 #判断是否为素数
 def isPrime(n):

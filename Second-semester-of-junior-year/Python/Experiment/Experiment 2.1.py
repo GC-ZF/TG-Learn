@@ -2,7 +2,7 @@
 @Author:张时贰
 @Date:2022年05月18日
 @CSDN:张时贰
-@Blog:zhangshier.vip
+@Blog:zhsher.cn
 """
 leaders_1 = [ 1, 2 ]
 leaders_2 = [ 3, 4 ]
